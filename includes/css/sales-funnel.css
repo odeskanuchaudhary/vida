@@ -1,0 +1,546 @@
+/*
+ * Style for the sales funnel pages
+--------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+
+body.vida-funnel-type #content {
+	line-height: 1.5em;	
+	color: #000000;
+	font-family: libre baskerville, 'Baskerville', Baskerville, Times New Roman, serif;
+}
+	body.sales-funnel-main>#page {
+		background: #eeeeee;
+		background: rgba(238,238,238,1);	
+	}
+
+	body.sales-funnel-thin>#page {
+		background: white;
+		background: #FFFFFF;
+	}
+	
+	body.sales-funnel-builder .site-content p {
+		margin-bottom: .85em;
+	    line-height: 1.65em;
+	}
+
+.page-template-page_vida-sales-builder .site-content.container {
+    padding: 0 !important;
+    max-width: 100%;
+    margin-top: 0 !important;
+}
+	.sales-funnel-builder .sales-content-area .entry-content {
+	    padding: 0 !important;
+		max-width: 100%;
+		margin-top: 0 !important;
+	}
+
+.site-content {
+	margin-top: 0px !important;
+} 
+.sales-content-area .entry-header {	
+	border-bottom: 0 !important;
+}
+
+.site-content .entry-content {
+	padding: 15px 0px;
+	font-size: 13px;
+	line-height: 1.5em;	
+}
+	.sales-funnel-builder .site-content .entry-content {
+		font-size: 15px;
+	}
+	
+.sales-content-area .entry-content h1,
+.sales-content-area .entry-content h2,
+.sales-content-area .entry-content h3,
+.sales-content-area .entry-content h4,
+.sales-content-area .entry-content h5 {
+	line-height: 1.5em;
+	color: #000000;
+	text-align: inherit;
+	font-family: libre baskerville, 'Baskerville', Baskerville, Times New Roman, serif;
+	font-weight: normal;
+}
+  .sales-content-area .entry-content > p{
+	line-height: inherit;	
+  }
+	.sales-content-area .entry-content h1{
+		margin-bottom: 0px;
+		margin-top: 0px;
+		font-size: 28px;
+	}
+	.sales-content-area .entry-content h2{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 24px;
+		text-align: left;
+	}
+	.sales-content-area .entry-content h3,
+	.sales-content-area .sales-thanks .entry-content .entry-title{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+	.sales-content-area .entry-content h4{
+		margin-bottom: 15px;
+		margin-top: 0px;
+		font-size: 18px;
+	}
+	.sales-content-area .entry-content h5{
+		margin-top: 0px;
+		margin-bottom: 20px;
+		font-size: 15px;
+		line-height: 1.8em;
+		text-align: left;
+	}	
+	.sales-content-area .entry-content p {
+		margin-bottom: 1em;
+	}
+	
+.sales-content-area .entry-footer {	
+	border-top: 0 !important;
+}
+
+#custom-copyright {
+	margin-top: -20px;
+    margin-bottom: 10px;
+}
+#custom-copyright,
+#custom-privacylink {
+	font-size: 11px;
+	font-size: .875em;
+	color: rgb(172, 180, 192);
+	font-family: 'open sans', serif !important;
+	font-size: 13px;
+}
+  #custom-copyright a,
+  #custom-privacylink a{
+	  color: #0000ff;	  
+	  
+	  font-family: 'open sans', serif !important;
+  }
+  #custom-privacylink {
+	 margin-bottom: 20px;
+  }
+ 
+/* WP Image - caption */
+.vida-funnel-type .wp-caption > img {
+  margin: 10px auto;
+}
+.vida-funnel-type .wp-caption .wp-caption-text {
+  font-size: .65em;
+  line-height: 1.5em;
+}
+
+
+/* Free Dates Sales Funnel */
+ .sales-content-area  .free-dates {
+	max-width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 15px !important;
+ }
+	
+  .su-row.free-dates-header {
+	margin-left: -10px;
+	margin-right: -10px;
+  }
+	
+	.su-row.free-dates-header .su-column {
+		margin: 0 !important;
+	}
+	
+ 	.sales-content-area .entry-content h1.freedates-header{
+		letter-spacing: -1px;
+		font-size: 24px;
+	} 
+  
+    .sales-content-area .free-dates .free-dates-form {
+		font-family: arial, tahoma, sans;
+		font-size: 14px;
+		margin-top: 50px;
+		padding-bottom: 30px;
+	}
+
+
+.sales-funnel-main .sales-content-area .hentry,
+.page .sales-content-area .sales-funnel.hentry{ 
+	padding-top: 0 !important;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+	.page .sales-content-area .sales-funnel.custom-header.hentry{
+		padding-top: 25px !important;
+	}
+
+.page .sales-content-area #sales-custom-header {
+	font-size: 16px;
+	padding-top: 20px;
+}
+	.vida-funnel-type .sales-content-area span#asseenin{
+		color: #990000;
+		display: inline-block;
+		padding: 5px 10px;
+	}
+
+
+.sales-content-area .sales-funnel > .entry-content {
+	padding-top: 0 !important;
+}
+
+.sales-content-area .sales-thanks .entry-content .entry-title {
+	color:#8f2831;
+}
+
+
+.entry-content span.group-words {
+	display: inline-block;
+}
+
+.free-blueprint-form,
+#free-blueprint-form1 {
+	padding: 10px 10px 20px;
+	border-radius: 5px;
+	background: #e2edff;
+	max-width: 400px;
+	background: #e2edff;	
+}
+
+ .moonray-form,
+ .free-blueprint-form .moonray-form {
+	padding-bottom: 20px;
+	font: 12px Verdana,Arial,sans-serif;
+ }
+  .moonray-form .moonray-form-element-wrapper,
+   .free-blueprint-form .moonray-form .moonray-form-element-wrapper {
+	overflow: inherit !important;
+	
+  }
+	.moonray-form label,
+	.free-blueprint-form  .moonray-form label,
+	.free-blueprint-form label {
+		margin-top: 20px;
+		font-weight: normal;
+		font-size: 15px;
+		display: block;
+		margin-bottom: .5em;
+	}
+
+	.free-blueprint-form input[type="text"],
+	.free-blueprint-form  input[type="email"],
+	.free-blueprint-form textarea,
+	.free-blueprint-form select{
+		border: #dedede 1px solid !important;
+		width: 100%;
+		padding: 10px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+		border-radius: 0 !important;
+		color: #656666;
+		font-family: 'Raleway', Helvetica, Arial, sans-serif !important;
+	}
+		.free-blueprint-form input[type="text"]:focus,
+		.free-blueprint-form  input[type="email"]:focus,
+		.free-blueprint-form select:focus,
+		.free-blueprint-form textarea:focus{
+			border: #3da7d1 1px solid !important;
+		}
+	.free-blueprint-form  .moonray-form-input-type-submit {
+		margin-top: 10px;
+	}
+	.free-blueprint-form  input[type="submit"]{
+		max-height: 50px;
+		border: none !important;
+		border-radius: 0;
+		border-radius: 0 !important;
+		font-size: 1.2em;
+		padding: 10px 20px;
+		font-weight: bold;
+		color: #fff;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		background: #f99f01;
+		min-width: 100%;
+		box-sizing: border-box;
+		margin-top: 10px;
+		width: 100%;
+		text-transform: capitalize;
+	}
+	
+	.free-blueprint-form select {
+		cursor: pointer;
+	}
+		.free-blueprint-form select:required:invalid {
+			color: #aaaaaa;
+		}
+		
+		.free-blueprint-form  option {
+			color: #656666;
+		}
+
+
+/*billing forms*/
+.vida-funnel-type  .free-blueprint-form.billing-form {
+	padding-top: 10px !important;
+}
+
+	.vida-funnel-type  .free-blueprint-form.billing-form  h4{
+		margin-top: 40px !important;
+	}
+	
+	.vida-funnel-type  .free-blueprint-form.billing-form  .moonray-form  .moonray-form-element-wrapper {
+		float: none !important;
+	}
+	
+	.vida-funnel-type  .free-blueprint-form.billing-form   .moonray-form .moonray-form-element-wrapper-contracted {
+		display: block !important;
+	}
+	
+	.vida-funnel-type  .free-blueprint-form.billing-form .moonray-form .moonray-form-element-paymentmethod .moonray-form-input-type-payment-code, 
+	.vida-funnel-type  .free-blueprint-form.billing-form .moonray-form .moonray-form-element-paymentmethod .moonray-form-input-type-payment-exp-year,
+	.vida-funnel-type  .free-blueprint-form.billing-form .moonray-form .moonray-form-element-paymentmethod .moonray-form-input-type-payment-number, 
+	.vida-funnel-type  .free-blueprint-form.billing-form .moonray-form .moonray-form-element-paymentmethod .moonray-form-input-type-payment-exp-month {
+		width: 100%;
+	}	
+	
+	.vida-funnel-type  .free-blueprint-form.billing-form .moonray-form-element-wrapper-contracted select.moonray-form-input {
+		margin-top: 10px;
+	}
+
+	.vida-funnel-type  .free-blueprint-form  p.form-privacy-text{
+		font-size: 12pt;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	
+	.vida-funnel-type  .free-blueprint-form table>thead>tr>th, 
+	.vida-funnel-type  .free-blueprint-form table>tbody>tr>th, 
+	.vida-funnel-type  .free-blueprint-form table>tfoot>tr>th, 
+	.vida-funnel-type  .free-blueprint-form table>thead>tr>td, 
+	.vida-funnel-type  .free-blueprint-form table>tbody>tr>td, 
+	.vida-funnel-type  .free-blueprint-form table>tfoot>tr>td {
+		font-size: inherit !important;
+	}
+	
+	.vida-funnel-type  .free-blueprint-form .grid-summary {
+		text-align: right;
+		font-weight: bold;
+	}
+		.vida-funnel-type  .free-blueprint-form .grid-summary-grandtotal {
+		    font-size: 120%;
+		}
+	
+
+	
+@media (min-width: 480px) {	
+	 
+	.free-blueprint-form,
+	#free-blueprint-form1 {
+		padding: 20px 20px 30px;
+	}
+	
+	.sales-content-area .entry-content {
+		padding: 30px 15px;
+		line-height: 1.5em;	
+	}
+	.sales-content-area .entry-content h5{
+		margin-top: 0px;
+	}
+	.sales-content-area .entry-content p {
+		margin-bottom: 1.1em;
+	}
+		.sales-content-area .entry-content h1.freedates-header{
+			font-size: 20px;
+		}
+		
+	.sales-content-area  .free-dates {
+		padding: 15px 30px !important;
+	}
+}
+
+  
+@media (min-width: 768px) {
+
+	 
+	.free-blueprint-form,
+	#free-blueprint-form1 {
+		padding: 30px 30px 50px;
+	}
+
+	.sales-content-area .entry-content {
+		padding: 20px 30px;
+		font-size: 14px;
+		line-height: 1.6em;	
+	}	
+	.sales-content-area .entry-content > h1,
+	.sales-content-area .entry-content > h2,
+	.sales-content-area .entry-content > h3,
+	.sales-content-area .entry-content > h4 {
+		line-height: 1.6em;
+	}
+		.sales-content-area .entry-content h1{
+			font-size: 32px;
+		}
+			.sales-content-area .entry-content h1.blueprint-header{
+				font-size: 30px;
+			}		
+			.sales-content-area .entry-content h1.freedates-header{
+				font-size: 24px;
+			}
+			
+		.sales-content-area .entry-content h2{
+			font-size: 28px;
+		}
+		.sales-content-area .entry-content h3,
+		.sales-content-area .sales-thanks .entry-content .entry-title{
+			font-size: 24px;
+		}
+		.sales-content-area .entry-content h4{
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		  .sales-content-area .free-dates  h4{
+			font-size: 20px;
+		  }
+		.sales-content-area .entry-content h5{
+			margin-top: 15px;
+			font-size: 18px;
+			line-height: 2em;
+		}	
+		.sales-content-area .entry-content p {
+			margin-bottom: 1.3em;
+		}
+		
+	.sales-content-area  .free-dates {
+		padding: 25px 45px !important;
+	}
+}  
+  
+@media (min-width: 992px) {	
+
+	.vida-funnel-type .sales-content-area  #asseeninimg {
+	  margin-top: -15px;
+	}
+		
+	.sales-content-area .entry-content {
+		padding: 15px 35px;
+		font-size: 14px;
+		line-height: 1.7em;		
+	}
+		.sales-funnel-thin .sales-content-area .entry-content,
+		.sales-funnel-builder .sales-content-area .entry-content	{
+			font-size: 18px;
+		}
+		
+	.sales-content-area .entry-content > h1,
+	.sales-content-area .entry-content > h2,
+	.sales-content-area .entry-content > h3,
+	.sales-content-area .entry-content > h4 {
+		line-height: 1.7em;	
+	}	
+		.sales-content-area .entry-content h1{
+			font-size: 36px;
+		}
+		.sales-content-area .entry-content h2{
+			font-size: 32px;
+		}
+		.sales-content-area .entry-content h3,
+		.sales-content-area .sales-thanks .entry-content .entry-title{
+			font-size: 28px;
+		}
+		.sales-content-area .entry-content h4{
+			font-size: 20px;		
+		}
+		.sales-content-area .free-dates  h4{
+			font-size: 22px;		
+		}
+		.sales-content-area .entry-content h5{
+			margin-bottom: 20px;
+		}		
+		.sales-content-area .entry-content p {
+			margin-bottom: 1.4em;
+		}
+		.sales-funnel-main .sales-content-area .entry-content p { /* only on funnel wide template */
+			line-height: 2em;		
+		}
+		.sales-content-area .entry-content h1.freedates-header{
+			margin-bottom: -5px !important;
+			font-size: 32px;
+		}
+	
+  .su-row.free-dates-header {
+	margin-left: -40px;
+	margin-right: -40px;
+  }
+  
+	.sales-content-area  .free-dates {
+		padding: 20px 60px 40px !important;
+	}
+}
+
+
+@media (max-width: 640px) {
+
+	body{
+		background: #FFFFFF;
+	}
+	
+	.sales-content-area .entry-content img {
+		
+		/* max-width: 100px; */
+		margin-top: 10px;
+		margin-bottom: 10px;
+		
+	}
+
+	.page .sales-content-area .hentry{
+		
+		padding-left: 0;
+		padding-right: 0;
+		
+	}
+	
+	.su-row.free-dates-header {
+		margin-bottom: 0;
+	}
+		
+	.vida-funnel-type .alignleft,
+	.vida-funnel-type .alignright{
+	
+		float: none !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}	
+	
+}
+
+
+@media (max-width: 559px) {
+
+	.sales-content-area .container {
+		
+		padding-left: 0;
+		padding-right: 0;		
+		
+	}
+	
+	
+}
+
+
+@media (max-width: 479px) {
+
+  .sales-funnel-main .sales-content-area .hentry,
+  .page .sales-content-area .sales-funnel.hentry {
+  
+    padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 0px;
+    margin-right: 0px;
+  
+  }
+
+}

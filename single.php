@@ -1,0 +1,96 @@
+<?php
+/**
+ * The template for displaying all single posts.
+ *
+ * @package Moesia
+ */
+
+get_header(); ?>
+
+<div id="blog-wrap" class="blog-round-box clearfix">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		<?php while ( have_posts() ) : the_post(); ?>
+
+			<?php if ( is_singular( array ( 'post', 'matchmaking' ) ) ): ?>
+				<?php get_template_part( 'content', 'single' ); ?>
+			<?php else : ?>
+				<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php endif; ?>	
+
+			<?php if ( get_theme_mod('author_bio') != '' && is_singular( array ( 'post' ) ) ) : ?>
+				<?php get_template_part( 'author-bio' ); ?>
+			<?php endif; ?>
+
+
+		<?php endwhile; // end of the loop. ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<?php //secondary
+	if ( is_singular( array ( 'matchmaking' ) ) )
+		get_sidebar('matchmaking');
+	else
+		get_sidebar();
+	?>
+	
+	<div class="clearfix"></div>
+	
+	<div id="content-end" class="clearfix"></div>
+	
+</div>
+	
+<div class="clearfix"></div>
+
+<?php 
+
+//Only show to single POSTS for blog
+if ( is_singular('post') ) : 
+?>
+<div id="vida-pre-footer">
+		
+	<div id="crp-related" class="vida-related-posts blog-round-box clearfix">
+
+		<?php if ( function_exists( 'echo_crp' ) ) echo_crp(); ?>
+
+	</div>
+
+		
+	<div id="vida-popular" class="vida-related-posts blog-round-box clearfix">
+
+		<h3 class="h2 utility-title text-center">The Most Popular Posts You'll Love:</h3>
+		
+		<?php 
+		
+		$popular_post_ids = array( "8012", "6616", "7500", "8642", "7735" );
+		
+		vida_related_posts( $popular_post_ids, get_the_ID() ); ?>
+
+	</div>
+	
+</div>
+<?php endif; // END Only show to single POSTS for blog ?>
+
+
+<!-- COMMENTS SECTION -->
+
+<?php // If comments are open or we have at least one comment, load up the comment template
+	if ( comments_open() ) : ?>
+				
+	<div id="post-comments" class="blog-round-box clearfix">
+
+		<h3 class="h2 utility-title text-center">Comments? Put 'em here</h3>
+		
+		<div class="col-md-12 col-lg-10 col-lg-offset-1">
+		
+			<?php comments_template(); ?>
+		
+		</div>
+		
+	</div>
+<?php endif; // END If comments are open ?>
+
+<?php get_footer(); ?>

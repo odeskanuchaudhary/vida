@@ -1,0 +1,100 @@
+<?php
+
+class ViDA_Title_Bar extends WP_Widget {
+
+// constructor
+    function vida_title_bar() {
+		$widget_ops = array('classname' => 'vida_title_bar_widget', 'description' => __( 'Display a title bar or headline with optional sub-title and excerpt.', 'vida') );
+        parent::WP_Widget(false, $name = __('ViDA: Title Bar', 'vida'), $widget_ops);
+		$this->alt_option_name = 'vida_title_bar_widget';
+		
+		add_action( 'save_post', array($this, 'flush_widget_cache') );
+		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
+		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
+    }
+	
+	// widget form creation
+	function form($instance) {
+
+	// Check values
+		$title     			= isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';				$sub_title     			= isset( $instance['sub_title'] ) ? esc_attr( $instance['sub_title'] ) : '';
+		$excerpt_text 		= isset( $instance['excerpt_text'] ) ? esc_textarea( $instance['excerpt_text'] ) : '';
+	?>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Headline Text', 'vida'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+	</p>
+	<p>	<label for="<?php echo $this->get_field_id('sub_title'); ?>"><?php _e('Sub-Headline Text', 'vida'); ?></label>	<input class="widefat" id="<?php echo $this->get_field_id('sub_title'); ?>" name="<?php echo $this->get_field_name('sub_title'); ?>" type="text" value="<?php echo $sub_title; ?>" />	</p>
+	<p>
+	<label for="<?php echo $this->get_field_id('excerpt_text'); ?>"><?php _e('Enter your excerpt.', 'vida'); ?></label>
+	<textarea class="widefat" id="<?php echo $this->get_field_id('excerpt_text'); ?>" name="<?php echo $this->get_field_name('excerpt_text'); ?>"><?php echo $excerpt_text; ?></textarea>
+	</p>
+	<?php
+	}
+
+	// update widget
+	function update($new_instance, $old_instance) {
+		$instance = $old_instance;
+		$instance['title'] 			 = strip_tags($new_instance['title']);				$instance['sub_title'] 			 = strip_tags($new_instance['sub_title']);
+		$instance['excerpt_text'] 	 = strip_tags($new_instance['excerpt_text']);		
+		$this->flush_widget_cache();
+
+		$alloptions = wp_cache_get( 'alloptions', 'options' );
+		if ( isset($alloptions['vida_title_bar']) )
+			delete_option('vida_title_bar');		  
+		  
+		return $instance;
+	}
+	
+	function flush_widget_cache() {
+		wp_cache_delete('vida_title_bar', 'widget');
+	}
+	
+	// display widget
+	function widget($args, $instance) {
+		$cache = array();
+		if ( ! $this->is_preview() ) {
+			$cache = wp_cache_get( 'vida_title_bar', 'widget' );
+		}
+
+		if ( ! is_array( $cache ) ) {
+			$cache = array();
+		}
+
+		if ( ! isset( $args['widget_id'] ) ) {
+			$args['widget_id'] = $this->id;
+		}
+
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		ob_start();
+		extract($args);
+
+		$title 			 = ( ! empty( $instance['title'] ) ) ? $instance['title'] : '';
+		$title 			 = apply_filters( 'widget_title', $title, $instance, $this->id_base );				$sub_title 			 = ( ! empty( $instance['sub_title'] ) ) ? $instance['sub_title'] : '';
+		$excerpt_text 	 = isset( $instance['excerpt_text'] ) ? esc_textarea($instance['excerpt_text']) : '';	
+
+?>
+		<?php echo $before_widget ?>
+				<?php if ( $title ) echo '<h2 class="widget-title">' . $title . '</h2>'; ?>								<?php if ( $sub_title ) echo '<h3 class="sub-title">' . $sub_title . '</h3>'; ?>
+				<?php if ($excerpt_text !='') : ?>				  <div class="textwidget">
+					<p class="excerpt-text wow zoomIn">
+						<?php echo $excerpt_text; ?>
+					</p>									  </div>
+				<?php endif; ?>
+		<?php echo $after_widget ?>		
+	<?php
+
+		if ( ! $this->is_preview() ) {
+			$cache[ $args['widget_id'] ] = ob_get_flush();
+			wp_cache_set( 'vida_title_bar', $cache, 'widget' );
+		} else {
+			ob_end_flush();
+		}
+	}
+	
+}

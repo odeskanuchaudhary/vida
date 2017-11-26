@@ -1,0 +1,88 @@
+<?php
+/**
+ * The FloatingButtonScript.
+ *
+ * Class : FloatingButtonScript
+ *
+ * @theme vida-women
+ */
+
+	// Exit if accessed directly
+    if ( ! defined( 'ABSPATH' ) ) {
+        exit;
+    }
+	
+	//Exit if our Main class isn't ready
+	if ( ! class_exists( 'ViDA' ) ) {
+		return;
+	}
+
+	//require our abstract class helper
+	require_once('abstract.ViDAHelper.class.php');
+
+	
+
+		class FloatingButtonScript extends ViDA_Helper 
+		{
+			
+			public function render() {				
+
+				$customScrollTrigger = ViDA::get_metabox('vida_button_scroll_position') ?: "null" ;
+				
+				return <<<HTML
+				
+				<script type="text/javascript">
+				
+				jQuery(document).ready(function($) {
+					
+					var scrollTrigger = ( $(".site-footer").offset().top / 3 );
+					var minScrollTrigger = ( $(".site-footer").offset().top / 2 );
+					var newScrollTrigger = {$customScrollTrigger};
+					
+					if ( newScrollTrigger )
+						scrollTrigger = newScrollTrigger;
+
+					console.log(scrollTrigger);
+					
+					$(window).scroll(function() {
+						
+						console.log($(window).scrollTop());
+					
+						if( $(window).scrollTop() > scrollTrigger ) {
+						
+							//$(".women-site-button").hide('slide');
+							$('body').addClass( 'vida-one-third' );
+							
+						} else {
+						
+							//$(".women-site-button").show('slide');
+							$('body').removeClass( 'vida-one-third' );
+						
+						}						
+					
+						if( $(window).scrollTop() > minScrollTrigger ) {
+							
+							$('body').addClass( 'vida-one-third vida-one-half' );
+							
+						} else {
+							
+							$('body').removeClass( 'vida-one-half' );
+							
+						}	
+					
+					});
+					
+				});	
+				
+				</script>				
+HTML;
+				
+				
+				return '';
+				
+				
+			} //render
+			
+		} //class
+
+	?>

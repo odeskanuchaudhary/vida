@@ -1,0 +1,182 @@
+<?php
+
+class ViDA_Sidebar_Optin extends WP_Widget {
+
+// constructor
+    function vida_sidebar_optin() {
+		
+		$widget_ops = array('classname' => 'vida_sidebaroptin_widget', 'description' => __( 'Add your optin html/text code ', 'vida') );
+		
+        parent::__construct(false, $name = __('ViDA: Sidebar Optin', 'vida'), $widget_ops);
+		$this->alt_option_name = 'vida_sidebaroptin_widget';
+
+		
+		add_action( 'save_post', array($this, 'flush_widget_cache') );
+		
+		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
+		
+		add_action( 'switch_theme', array($this, 'flush_widget_cache') );	
+		
+    }
+
+	
+	// widget form creation
+	function form($instance) {
+	
+	// Check values
+	$optin_name	= isset( $instance['optin_name'] ) ?  $instance['optin_name'] : '';
+	$sidebar_optin	= isset( $instance['sidebar_optin'] ) ?  $instance['sidebar_optin'] : '';
+	
+	?>
+	
+	<p>
+		
+		<label for="<?php echo $this->get_field_id('optin_name'); ?>"><?php _e('Optin Name:', 'vida'); ?></label>
+		
+		<input class="large-text" id="<?php echo $this->get_field_id('optin_name'); ?>" name="<?php echo $this->get_field_name('optin_name'); ?>" type="text" value="<?php echo $optin_name; ?>" /><br />
+		
+	</p>
+
+	<p>
+		
+		<label for="<?php echo $this->get_field_id('sidebar_optin'); ?>"><?php _e('Add your optin html/text code here', 'vida'); ?></label>
+		
+		<?php
+		
+		$sidebar_optin_id = $this->get_field_id('sidebar_optin');
+		
+		$sidebar_optin_name = $this->get_field_name('sidebar_optin');
+		
+		$sidebar_optin_content = $sidebar_optin;	
+		
+		?>
+		
+		<textarea class="widefat" rows="16" cols="20" id="<?php echo $sidebar_optin_id ?>" name="<?php echo $sidebar_optin_name; ?>"><?php echo $sidebar_optin_content; ?></textarea>
+		
+	</p>
+	
+	<?php
+	}
+
+	// update widget
+	function update($new_instance, $old_instance) {
+		
+		$instance = $old_instance;
+		
+		$instance['optin_name'] = $new_instance['optin_name'];
+		
+		$instance['sidebar_optin'] = $new_instance['sidebar_optin'];
+		
+		
+		$this->flush_widget_cache();	
+		
+		$alloptions = wp_cache_get( 'alloptions', 'options' );
+		
+		
+		if ( isset($alloptions['vida_sidebar_optin']) )
+			delete_option('vida_sidebar_optin');		  
+
+		
+		return $instance;
+	}
+
+	
+	function flush_widget_cache() {
+		
+		wp_cache_delete('vida_sidebar_optin', 'widget');
+		
+	}
+	
+	
+	
+	// display widget
+	function widget($args, $instance) {
+		
+		
+		$cache = array();
+		
+		if ( ! $this->is_preview() ) {
+			
+			$cache = wp_cache_get( 'vida_sidebar_optin', 'widget' );
+			
+		}
+		
+
+		if ( ! is_array( $cache ) ) {
+			
+			$cache = array();
+			
+		}
+
+		
+		if ( ! isset( $args['widget_id'] ) ) {
+			
+			$args['widget_id'] = $this->id;
+			
+		}
+		
+		
+
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			
+			echo $cache[ $args['widget_id'] ];
+			
+			return;
+			
+		}
+
+		
+		
+		ob_start();	
+		
+		extract($args);
+
+		
+		$optin_name = isset( $instance['optin_name'] ) ? esc_attr( $instance['optin_name'] ) : '';	
+		
+		$sidebar_optin = isset( $instance['sidebar_optin'] ) ? $instance['sidebar_optin'] : '';	
+		
+
+
+		if ($sidebar_optin !='') : 
+		
+			echo $before_widget;
+			
+			?>				  
+			
+			<div class="textwidget sidebar-optin sidebar-optin-<?php echo $optin_name; ?>">
+			
+				<?php echo do_shortcode( $sidebar_optin ); ?>
+				
+			</div>
+			
+			<?php 
+			
+			echo $after_widget;
+			
+			
+		endif; 
+		
+		
+		
+		if ( ! $this->is_preview() ) {
+			
+			
+			$cache[ $args['widget_id'] ] = ob_get_flush();
+			
+			
+			wp_cache_set( 'vida_sidebar_optin', $cache, 'widget' );
+			
+			
+		} else {
+
+		
+			ob_end_flush();
+
+			
+		}
+		
+	}
+
+	
+}

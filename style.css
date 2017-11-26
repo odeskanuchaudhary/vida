@@ -1,0 +1,3766 @@
+/*
+Theme Name: ViDA
+Theme URI: https://www.virtualdatingassistants.com
+Description: A customized child-theme based on Moesai
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Template: moesia
+
+Text Domain: moesia-vida
+
+--------------------------------------------------------------*/
+
+#page {
+	/* display: inherit; */
+	background-color: #fff;	
+}
+
+#content {
+	background: inherit;
+}
+
+/* hide google iframe */
+body>iframe[name="google_conversion_frame"]  {display:none !important;}
+	
+	
+
+/* Fonts */
+/*
+ * Adobe Caslon Pro FONTs
+ */
+/*
+@font-face { 
+	font-family: 'Adobe Caslon Pro'; 
+	src: url('https://www.virtualdatingassistants.com/files/fonts/AdobeCaslonPro.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+} 
+
+@font-face { 
+	font-family: 'Adobe Caslon Pro 2'; 
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ACaslonPro-Semibold.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: 'Adobe Caslon Pro 2'; 
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ACaslonPro-SemiboldItalic.otf') format('opentype');
+	font-weight: normlal;
+	font-style: italic;
+} 
+
+ 
+@font-face { 
+	font-family: 'Adobe Caslon Pro 2'; 
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ACaslonPro-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+} 
+ 
+@font-face { 
+	font-family: 'Adobe Caslon Pro 2'; 
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ACaslonPro-BoldItalic_0.otf') format('opentype');
+	font-weight: 700;
+	font-style: italic;
+} 
+ */
+/*
+ * ITCAvantGardePro FONTs
+
+@font-face {
+	font-family: 'ITCAvantGardePro-Bold';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ITCAvantGardePro-Bold.otf') format('opentype');
+}
+@font-face {
+	font-family: 'ITCAvantGardePro-Md';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ITCAvantGardePro-Md.otf') format('opentype');
+}
+@font-face {
+	font-family: 'ITCAvantGardePro-MdObl';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/ITCAvantGardePro-MdObl.otf') format('opentype');
+}
+ */
+/*
+ * 'Baskerville'
+
+
+@font-face {
+	font-family: 'Baskerville';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Baskerville.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Baskerville';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Baskerville-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+@font-face {
+	font-family: 'Baskerville';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Baskerville-SemiBold.ttf') format('truetype');
+	font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Baskerville'; 
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Baskerville-SemiBoldItalic.ttf') format('truetype');
+	font-weight: bold;
+    font-style: italic;
+}
+ */
+
+/*
+ *  'Montserrat'
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Montserrat-Light.otf') format('opentype');
+	font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Montserrat-Regular.otf') format('opentype');
+	font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Montserrat-SemiBold.otf') format('opentype');
+	font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/Montserrat-Bold.otf') format('opentype');
+	font-weight: 800;
+    font-style: normal;
+}
+ */
+
+/*
+ * RoadRadio FONTs
+
+@font-face {
+	font-family: 'RoadRadio';
+	src: url('https://www.virtualdatingassistants.com/files/fonts/RoadRadio.otf') format('opentype');
+}
+ */
+
+/*Merriweather
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https://www.virtualdatingassistants.com/files/fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	@font-face {
+		font-family: 'Merriweather';
+		src: url('https://www.virtualdatingassistants.com/files/fonts/Merriweather-Italic.otf') format('opentype');
+		font-weight: normal;
+		font-style: italic;
+	}
+	
+	@font-face {
+		font-family: 'Merriweather';
+		src: url('https://www.virtualdatingassistants.com/files/fonts/Merriweather-Bold.ttf') format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+	
+		@font-face {
+			font-family: 'Merriweather';
+			src: url('https://www.virtualdatingassistants.com/files/fonts/Merriweather-BoldItalic.otf') format('opentype');
+			font-weight: bold;
+			font-style: italic;
+		}
+*/
+/*Raleway
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://www.virtualdatingassistants.com/files/fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	@font-face {
+		font-family: 'Raleway';
+		src: url('https://www.virtualdatingassistants.com/files/fonts/Raleway-Italic.ttf') format('truetype');
+		font-weight: normal;
+		font-style: italic;
+	}
+	
+	@font-face {
+		font-family: 'Raleway';
+		src: url('https://www.virtualdatingassistants.com/files/fonts/Raleway-Bold.ttf') format('truetype');
+		font-weight: bold;
+		font-style: normal;
+	}
+	
+		@font-face {
+			font-family: 'Raleway';
+			src: url('https://www.virtualdatingassistants.com/files/fonts/Raleway-BoldItalic.ttf') format('truetype');
+			font-weight: bold;
+			font-style: italic;
+		}
+*/
+
+/***
+ ** ViDA styles - General, Layout, Header, Content Layout, Footer
+ ** @child - moesia theme
+ **/ 
+ 
+html {
+	overflow: hidden; /* Disables panning */
+	overflow-y: visible !important;
+    -ms-content-zooming: none; /* Disables zooming */
+	/* touch-action: none;  Disable any special actions on tap/touch */
+}
+
+body {
+	font-family: 'Baskerville', Baskerville, Times New Roman, serif; /*   */
+	color: #2f2f2f;
+	/* font-size: 16px; <-default for browsers... We set html font-size to 62.5%=10px to get 100%=16px=1em	
+	background-color: #074568; */
+	font-size: 1em;
+	line-height: 1.4;
+	background-color: #fff;
+	word-break: break-word;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	width: 100%;
+}
+
+	body:not([class*=home]) {
+		background-image: none !important;
+	}
+	
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Adobe Caslon Pro', Times, serif;
+	color: #2f2f2f;
+	margin-top: 10px;
+}
+
+.single .entry-content h2,
+.single .entry-content h3 {
+	margin-bottom: 20px;
+}
+
+input, select, textarea {
+	padding: 5px 10px;
+	outline: none !important;
+	-webkit-appearance: none !important;
+	  -moz-appearance:    none !important;
+		appearance:         none !important;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: auto;
+	font-size: 1em;
+	border: #CCC 1px solid ;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif !important;
+}
+
+.page-template-page_vida-fullwidth .site-content.container {
+	padding: 0;
+	max-width: 100%;
+	margin-top: 0;
+}
+
+.animate, .animate * {
+	-webkit-transition: all 0.3s !important;
+	  -moz-transition:  all 0.3s !important;
+		transition: all 0.3s !important;
+}
+
+.vida-hidden,
+.best-email {
+	display: none !important;
+}		
+
+/*--------------------------------------------------------------
+Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	background-color: #fff;
+}
+.page-content a,
+.entry-content a,
+.entry-summary a {
+    color: #E8890C;
+}
+.page-content a:hover,
+.entry-content a:hover,
+.entry-summary a:hover {
+    color: #1a4362;
+}
+.entry-thumb {
+	border: 3px double #ececec;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.entry-thumb img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    /* max-width: 350px;
+    max-height: auto; */
+    border: none !important;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+	.hentry .entry-content img.alignleft {
+		margin-right: 20px;
+	}
+	.hentry .entry-content img.alignright {
+		margin-left: 20px;
+	}
+	.hentry .entry-content img.alignnone {
+		margin-left: 10px;
+		margin-right: 10px;
+	}	
+	
+.entry-thumb img:hover {
+	opacity: 0.7;
+}
+.entry-header, .blog .widget-title {
+	border-bottom: 3px double #ececec;
+	margin-bottom: 30px;
+}
+.entry-title, .entry-title a, .single .entry-title, .blog .entry-title a {
+    color: #1a4362;
+    vertical-align: middle;
+	font-weight: bold;
+	display: block;
+}
+.entry-header {
+	position: relative;
+}
+.entry-header > .entry-meta {
+	text-align: center;
+}
+
+.blog .entry-header:before,
+.archive .entry-header:before,
+.search .entry-header:before,
+.single .entry-header:before{
+    font-family: FontAwesome;
+	color: #fff;
+	background-color: #1a4362;
+    padding: 8px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-size: 32px;
+	content: '\f0f6';
+	border-radius: 50%;
+    width: 56px;
+    height: 56px;
+	text-align: center;
+	border: #FFF 2px solid;
+    box-shadow: 0px 0px 0px 2px #1a4362;
+	}
+	
+	.blog .entry-header:before,
+	.archive .entry-header:before,
+	.search .entry-header:before,
+	.single .entry-header:before {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-top: -27px;
+		margin-bottom: 5px;
+	}
+	  .blog .entry-header:before,
+	  .archive .entry-header:before,
+	  .search .entry-header:before {
+		margin-top: -59px;
+	  }
+		.blog .entry-meta span,
+		.archive .entry-meta span,
+		.search .entry-meta span,
+		.single .entry-meta span {
+			margin-right: 0;
+		}
+.entry-meta, .entry-meta a {
+    color: #2e2e2e;
+}
+.entry-title a:hover,
+.widget a:hover,
+.entry-meta a:hover,
+.entry-footer a:hover,
+.entry-content a:hover,
+.blog .widget-area a:hover,
+.archive .widget-area a:hover,
+.search .widget-area a:hover,
+.single .widget-area a:hover {
+	color: #E8890C !important;
+	text-decoration: none !important;
+}
+.widget-area input[type=image],
+.widget-area input[type=submit] {
+	border: none;
+}
+.widget-area input#sbEmail {
+	font-style: italic;
+	width: 96%;
+	color: #aaaaaa;
+	padding: 7px 15px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 20px;
+    display: block;
+}
+.widget-area p small {
+	font-size: 75%;
+}
+
+.entry-footer {
+	border-top: 3px double #ececec;
+}
+.entry-footer, .entry-footer a {
+    color: #2e2e2e;
+}
+.hentry .post-content {
+    border: 3px double #1a4362;
+}    
+.single .hentry,
+.page .hentry {
+	border: none;
+	/* padding: 30px 25px; */
+	padding: 0;
+}
+
+.single .entry-content p {
+  /* padding: 15px 0; */
+}
+
+.vida-post-content blockquote {
+	font-size: 20px;
+}
+
+
+/**
+ * Sidebar Area
+ * #secondary or .widget-area 
+ */
+ 
+.widget-area {
+	border: none;
+	font-size: 16px;
+	font-size: 2rem;
+	padding: 0 0 30px;
+	margin: 0 -1px !important;
+}
+
+  .widget-area > .widget {
+	padding: 30px;
+	font-size: inherit;
+	border: 1px solid #efefef;
+  }
+  
+	/* No paddings = no border */
+	  .widget-area > .widget.sidebar-nopadding {
+		padding: 0px;
+		border: 0px;
+	  }
+  
+	.widget > .widget-title,
+	.widget > .widgettitle,
+	.widget > .widget-title a,
+	.widget > .widgettitle a {
+		color: #1a4362;
+		border-bottom: none;
+	}
+
+	.widget-area > .widget a{
+		color: #E8890C;
+	}
+	
+	.widget-area > div > * {
+		/* border: 1px transparent #FFFFFF; */
+	}
+	
+	/* adjustments for tables */
+	.single .entry-content table>thead>tr>th,
+	.single .entry-content table>tbody>tr>th,
+	.single .entry-content table>tfoot>tr>th,
+	.single .entry-content table>thead>tr>td,
+	.single .entry-content table>tbody>tr>td,
+	.single .entry-content table>tfoot>tr>td {
+		padding: 15px;
+	}
+
+	
+	/* Admin Styles */
+	.widget-area > .widget.open {
+	    margin-left: -122px;
+	}
+
+	/* images in sidebar */
+	.widget-area > .widget img{
+		max-width: 100%;
+		border: 1px solid #efefef;
+		margin-bottom: 10px;
+	}
+		.widget-area > .widget.sidebar-nopadding img,
+		.widget-area > .widget img.no-border {
+			border: none !important;
+		}
+
+	/* search form widget */
+	.widget .search-wrapper form {
+		display: table;
+		width: 100%;
+	}
+	 .widget .search-wrapper label {
+		margin-bottom: 0 !Important;
+	 }
+	  .widget .search-wrapper label,
+	  .widget .search-wrapper  input[type=submit] {
+		display: table-cell !important;
+	  }
+		.widget .search-wrapper input[type=search] {
+			padding: 9px 18px;
+			border: 1px solid #cccccc;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			width: 96%;
+			font-weight: normal;
+		}
+		.widget .search-wrapper input[type=submit] {
+			min-width: 20px !important;
+			margin-right: 0;
+		}	
+
+/* Blog and single posts */
+.blog .post-content,
+.archive .post-content,
+.search .post-content {
+	padding: 15px;
+}
+	.site-content .content-area  .post,
+	.site-content .entry-content {
+		font-size: 1.7rem;
+	}
+	
+	.blog .post-content,
+	.archive .post-content,
+	.search .post-content,
+	.site-content .content-area  .post,
+	.site-content #secondary,
+	.search .content-area
+	{
+		font-family: 'Geomanist', Helvetica, Arial, sans-serif !important;
+		font-size: 1.6rem;
+	}
+		.blog .post-content header .entry-title,
+		.archive .post-content header .entry-title,
+		.search .post-content header .entry-title,
+		.entry-header .entry-title,
+		aside .widget-title,
+		.single .entry-content h1,
+		.single .entry-content h2,
+		.single .entry-content h3,
+		.single .entry-content h4,
+		.widget-area .vida_textarea h3{
+			font-family: 'Merriweather', Georgia, serif !important;
+		}
+		
+			.single .entry-content h4 {
+				font-size: inherit;
+			}
+		
+		/* excerpt content */
+		.post-content .entry-summary {
+			text-align: center;
+		}
+			.post-content .entry-summary p{
+				text-align: left;
+			}
+
+		.single .entry-content {
+		 
+		}	
+	
+/* Media for Blog and single */
+
+	@media (min-width: 768px) {
+	
+		.blog .post-content,
+		.archive .post-content ,
+		.search .post-content  {
+			padding: 20px;
+		}
+		
+		.site-content .entry-content {
+			font-size: 1.8rem;
+		}
+		
+		.blog .post-content,
+		.archive .post-content,
+		.search .post-content,		
+		.search .content-area {
+			font-size: 1.7rem;
+		}
+		
+	}
+		
+		
+	@media (min-width: 992px) {
+	
+		.blog .post-content,
+		.archive .post-content ,
+		.search .post-content  {
+			padding: 25px;
+		}
+		
+		.site-content .entry-content {
+			font-size: 1.9rem;
+		}
+		
+		.blog .post-content,
+		.archive .post-content,
+		.search .post-content,		
+		.search .content-area {
+			font-size: 1.8rem;
+		}
+		
+	}
+		
+	@media (min-width: 1200px) {
+		.blog .post-content,
+		.archive .post-content ,
+		.search .post-content  {
+			padding: 30px;
+		}
+	}
+	
+	@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
+
+		.site-content .entry-content {
+			font-size: 2rem;
+		}
+		
+		.blog .post-content,
+		.archive .post-content,
+		.search .post-content,		
+		.search .content-area {
+			font-size: 1.9rem;
+		}
+		
+	}			
+		
+	/* read more */
+	.entry-summary a.read-more{
+	  background: #606163 !important;
+	  font-size: 18px !important;
+	  padding: 15px 35px !important;
+	  color: #FFF !important;
+	  font-family: 'Baskerville', Times, serif !important;
+	  text-decoration: none !important;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  display: inline-block;
+	}
+
+	.entry-summary a.read-more:hover{
+	  background: #1a4362 !important;
+	}
+
+	.entry-meta .posted-on, .entry-date {
+	  display: none;
+	}
+	
+	/* utility-title more on widgets in posts (about, related) */
+	.single .content-area .utility-title,
+	.utility-title {
+		font-family: 'Raleway', Helvetica, Arial, sans-serif !important;
+		font-weight: bold;
+		color: #1a4362;
+	}
+
+	.blog .post-content ul,
+	.archive .post-content ul,
+	.search .post-content ul,
+	.site-content .entry-content ul,
+	.search .content-area ul,	
+	.blog .post-content ol,
+	.archive .post-content ol,
+	.search .post-content ol,
+	.site-content .entry-content ol,
+	.search .content-area ol,
+	.content-area ul ul,
+	.content-area ol ol {
+		padding-bottom: 15px;
+	}
+		
+		.blog .post-content li,
+		.archive .post-content li,
+		.search .post-content li,
+		.site-content .entry-content li,
+		.search .content-area li {
+			margin-bottom: 10px;
+		}
+		
+	
+	
+
+.post-navigation .nav-previous, .post-navigation .nav-next, 
+.paging-navigation .nav-previous, .paging-navigation .nav-next {
+	background: #606163 !important;
+	padding: 0;
+	font-weight: normal !Important;
+	text-transform: none !important;
+}
+	.post-navigation .nav-previous:hover , .post-navigation .nav-next:hover , 
+	.paging-navigation .nav-previous:hover , .paging-navigation .nav-next:hover  {
+	    background: #1a4362 !important;
+		color: inherit;
+	}
+
+.post-navigation .nav-previous a, .post-navigation .nav-next a, 
+.paging-navigation .nav-previous a, .paging-navigation .nav-next a {
+	padding: 15px;
+	display: block;
+	background: none;
+	text-decoration: none;	
+}
+	.post-navigation .nav-previous a:hover , .post-navigation .nav-next a:hover , 
+	.paging-navigation .nav-previous a:hover , .paging-navigation .nav-next a:hover  {
+		color: inherit;
+	}
+
+/* Free Consultation on bottom of posts biographia */
+.single .entry-content .free-consultation-box {
+	display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Disqus */
+.vida-comment-title {
+	padding-bottom: 15px;
+	border-bottom: 3px double #ececec;
+}
+#disqus_thread,
+.dcl-disqus-thread {
+	padding-bottom: 30px !important;
+	padding-top: 20px !important;
+}
+
+
+
+
+/* Floating Button */
+.vida-floating-button {
+	position: fixed;
+	z-index: 999999 !important ;
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 0px;	
+	bottom: 0;
+	left: auto;
+	right: 5%;
+	font-size: inherit;
+	background: transparent !important;
+
+	-webkit-animation:  fadein .5s ;
+	  -moz-animation:  fadein .5s ;
+		animation:  fadein .5s ;		
+}
+
+
+ .vida-floating-button  > a {
+	text-decoration: none ;
+	display: block;
+	z-index: 999999 !important ;
+	font-weight: normal;
+ 	/* padding: 2px 10px 5px; */
+	padding: 10px 15px 15px;
+	color: #FFFFFF;	
+	margin: 0px auto;
+	text-transform: uppercase;
+	background: rgb(114, 72, 49); /*default BG color*/
+	
+	/* font-family: 'RoadRadio', sans-serif ;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif ; */
+	font-family: 'ITCAvantGardePro-Md', Arial, sans !important;
+	
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;	
+	
+	border: 1px solid transparent;
+	
+	-webkit-appearance: button;
+	    
+		
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+	.women-site-button > a {	
+		opacity: .9;
+		font-size: 1.8rem;
+		background: rgba(96, 49, 114, .9);		
+	}
+	
+	 .vida-floating-button  > a:hover {
+		font-size: 1.8rem;
+		
+	 }
+		.women-site-button > a:hover,
+		.women-site-button > a:active,
+		.women-site-button > a:focus,
+		.women-site-button > a:visited {
+			opacity: 1;
+			background: rgba(96, 49, 114, 1); /* #603172 */
+			
+			visibility: visible;
+			transition: all 0s linear;
+		} 
+
+		/*venus icon*/
+		.vida-floating-button  > a > span > .fa-venus {
+			font-weight: bold;
+			font-size: 2.3rem;
+			vertical-align: -25%;
+			margin: 0px 1px;
+		}
+
+	.vida-one-third .women-site-button > a {
+		/*
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 1s, all 1s linear;
+		*/
+	}
+
+	
+	@media (min-width: 768px) {
+		
+		.vida-floating-button {
+			bottom: 10%;
+			right: auto;
+			left: 0;
+			-webkit-transform-origin: top left;
+			-moz-transform-origin:    top left;
+			-ms-transform-origin:     top left;
+			-o-transform-origin:      top left;
+			transform-origin:      top left;
+			
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			-o-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			/* Internet Explorer */
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
+		}
+		   .vida-floating-button  > a {
+				-webkit-appearance: none;
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				padding: 5px 15px 10px;
+		   }
+		.women-site-button > a {	
+			opacity: .8;
+			
+		}
+			.women-site-button > a:hover{
+				padding-top: 12px;
+			}
+		.vida-one-third .women-site-button > a {
+			opacity: .1;
+			visibility: visible;
+			transition: visibility 0s 3s, all 3s linear;
+		}
+			.vida-one-third .women-site-button > a:hover {
+				opacity: 1;
+				transition: all 0.1s linear;
+				
+				font-size: 1.8rem;
+			}
+
+
+   }
+	
+	
+/*
+ * Free Strategy Session page 
+ */
+
+.free-strategy-testimonial {
+	background: url(images/banner-bg-faded-free-strategy.jpg) top center no-repeat;
+}
+
+/*page bullet*/
+ul.page-bullet {
+	list-style: none;
+	color: inherit;
+	text-align:center;
+	display: table;
+	table-layout: fixed;
+	background: url(images/page-bullet-step2.png) top center no-repeat;
+	padding: 40px 2px 5px;
+	margin-bottom: 0;
+	width: 100%;
+	max-width: 640px;
+	font-style: italic;
+	margin-left: auto;
+	margin-right: auto;
+}
+	ul.page-bullet > li {
+		display: table-cell;
+	}
+	
+	ul.page-bullet > li.active {
+		font-weight: bold;
+	}
+	
+	ul.page-bullet.step1 {
+		background: url(images/page-bullet-step-1.png) top center no-repeat;
+	}
+	ul.page-bullet.freestep {
+		background: url(images/page-bullet-step-2-a.png) top center no-repeat;
+	}	
+	ul.page-bullet.questionnaire {
+		background: url(images/page-bullet-step-2-b.png) top center no-repeat;
+	}
+
+.strategy-boxes {
+	margin-top: 10px;
+}
+
+  .strategy-boxes  .strategy-game-plan-list {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 10px;
+	padding-bottom: 45px;
+	font-size: inherit;
+	list-style: none;
+	max-width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8fbfe+0,f8fbfe+100&0.65+0,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(248,251,254,0.65) 0%, rgba(248,251,254,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(248,251,254,0.65) 0%,rgba(248,251,254,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(248,251,254,0.65) 0%,rgba(248,251,254,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6f8fbfe', endColorstr='#00f8fbfe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+  }
+	.strategy-game-plan-list > li {
+		display: block;		
+		position: relative;
+		font-size: inherit;
+		line-height: 1.3em;
+		padding: 15px 10px 20px;
+		text-align: center;
+	}
+		.strategy-game-plan-list > li:first-child:before,
+		.strategy-game-plan-list > li:after {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 2px;
+			width: 120px;
+			top: -5px;
+			left: 50%;
+			margin-left: -60px;
+			/* left: -webkit-calc(50% - 60px);
+			left: -moz-calc(50% - 60px);
+			left: -o-calc(50% - 60px);
+			left: calc(50% - 60px);	*/	
+			border: #44738d 1px solid;
+		}
+		.strategy-game-plan-list > li:after{
+			top: auto;
+			bottom: 0;
+		}
+  
+  .strategy-boxes  .su-row {
+    display: table;
+  }
+	 .strategy-boxes  .su-row > .su-column{
+		/* display: table-cell;
+		float: none !important; 
+		margin: 0;*/
+		padding: 5px;
+	 }
+
+		.strategy-boxes .su-column-inner {
+		  /* background-color: rgb(254, 158, 12); color: #FFF; 
+		  background: url(images/free-strategy-circle.png) no-repeat center center;*/
+		  text-align: center;
+		  padding: 20px;
+		  border-radius: 10px;
+		  display: block;
+		  height: 100%;
+		  vertical-align: middle;
+		}
+	
+	/**
+	 * - numbered list with number as the background
+	 * - sked-widget
+	 */
+	.vida-number-bg {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -20px;
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	  .vida-number-bg > ol {
+		list-style-type: none;
+		padding-left: 0;
+		display: flex;
+		font-size: 18px;
+	  }		
+		.vida-number-bg > ol li {
+			counter-increment: step-counter;
+			/* clear: both; */
+			text-align: center;
+			position: relative;
+			
+			display: -ms-Flexbox;
+			-ms-box-orient: horizontal;
+			display: -webkit-box; /* iOS 6-, OLD Safari 3.1-6, BB7 */
+			display: -webkit-flex; /* NEW Safari 6.1+. iOS 7.1+, BB10*/
+			display: -moz-flex;
+			display: -ms-flex;	
+			display: flex;
+			
+			-webkit-flex-grow: 1;
+			-moz-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+
+			width: 100%;
+			max-width: 25%;
+			font-size: inherit;		
+		}
+		
+		.vida-number-bg > ol.strategy-mobile-list {
+			display: none
+		}
+		
+		.vida-number-bg > ol li:before {
+			font-size: 21rem;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			content: counter(step-counter);			
+			line-height: 1;
+			color: #D9E5EA;
+			font-weight: bold;
+			font-style: italic;
+			font-family: 'Baskerville', Baskerville, Times New Roman, serif;
+		}
+		
+		  .vida-number-bg > ol li > span.number-bg-content {
+			margin-left: -25px;
+			margin-right: -25px;
+			position: absolute;
+			display: -ms-flex;
+			display: -ms-flexbox;
+			-ms-box-orient: horizontal;
+			display: -webkit-box; 
+			display: -webkit-flex;
+			display: -moz-flex;
+			
+			display: flex;
+			
+			display: -ms-grid;
+			
+			-webkit-box-align: center; /* NEW Safari */	
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			font-size: initial;
+			padding: 15px;
+			text-shadow: #FFF 2px 1px 1px;
+		  }
+		  
+			.vida-number-bg > ol li:nth-child(odd) {
+				margin-bottom: 100px;
+			}
+			.vida-number-bg > ol li:nth-child(even) {
+				margin-top: 100px;
+			}		
+			
+		.skedwidget {
+		  height: auto !important;
+		  min-height: 320px;
+		  padding: 20px 0;
+		  position: relative;
+		}
+		.skedwidget iframe {
+		  min-height: 320px !important;
+		}
+			.skedwidget:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 125px;				
+				height: 211px;
+				background: url(images/free-strategy-step-arrow-down.png);
+				left: -63px;
+				top: -120px;
+			}
+			
+		@media (max-width:991px) {
+			.vida-number-bg{
+				max-width: 560px;
+			}
+			.vida-number-bg > ol li {
+				display: none;
+				max-width: 100%;
+				margin-top: 0 !important;
+				margin-bottom: 0 !important;
+			}
+			.vida-number-bg > ol.strategy-mobile-list,
+			.vida-number-bg > ol.strategy-mobile-list >li,
+			.vida-number-bg > ol li:first-child {
+				display: block !important;
+			}
+			.vida-number-bg > ol.strategy-mobile-list {
+				counter-reset:  step-counter 1 ;
+			}
+			  .vida-number-bg > ol.strategy-mobile-list  li {
+				counter-increment: step-counter
+			  }
+				.vida-number-bg > ol.strategy-mobile-list  li:first-child {
+				display: none !important;
+				}
+			
+			.skedwidget:before {
+				display: none;
+			}
+		}	
+		
+.entry-content span.group-words {
+    display: inline-block;
+}
+		
+/**
+ * Panels & Site Origin Panels
+ */
+.panel-grid {
+	border: none;
+	background: inherit;
+}
+	.panel-grid .panel-row-style {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	/* row with .vida-title-only class */
+	.panel-grid .panel-row-style.title-only {
+		padding-bottom: 10px;
+	}
+	
+	.panel-grid .panel-row-style.no-padding {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+	}
+	
+.panel.widget, .so-panel.widget { 
+	color: inherit;
+	padding: 0px 0px;
+} 
+ .so-panel.widget .widget-title {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-top: none !important;
+ }	
+	.panel.widget .widget-title:after,
+	.so-panel.widget .widget-title:after,
+	.widget .widget-title:after	{
+		border-bottom: none;
+		content: none;
+		clear: both;
+	}
+
+
+/**
+ * Widget Titles 
+ * @ ViDA Title Bar
+ */
+.panel.widget .widget-title,
+.so-panel.widget .widget-title,
+section .widget-title {
+	margin: 15px auto 15px auto;
+	font-weight: bold;
+	width: 100%;
+	font-family: 'Adobe Caslon Pro 2', 'Adobe Caslon Pro', Times, serif;
+	font-size: 24px;
+	font-size: 2.4rem;
+	color: #1a4362;
+    text-transform: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+	/* rows with title only */
+	.title-only .panel.widget  .widget-title, 
+	.title-only .so-panel.widget   .widget-title, 
+	.title-only section  .widget-title {
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+	}
+	
+	.so-panel.widget.vida_title_bar_widget {
+		margin-bottom: 0 !important;
+	}
+	
+	/*No margin widget titles*/
+	.panel.widget .widget-title.no-margin,
+	.so-panel.widget .widget-title.no-margin,
+	section .widget-title.no-margin {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}	
+	
+	#page #content .no-margin-top,
+	.panel.widget .widget-title.no-margin-top,
+	.so-panel.widget .widget-title.no-margin-top,
+	section .widget-title.no-margin-top {
+		margin-top: 0 !important;
+	}	
+	
+	#page #content .no-margin-bottom,
+	.panel.widget .widget-title.no-margin-bottom,
+	.so-panel.widget .widget-title.no-margin-bottom,
+	section .widget-title.no-margin-bottom {
+		margin-bottom: 0 !important;
+	}
+	
+
+.so-panel.widget h4.widget-title{
+  font-size: 20px;
+}
+	
+/**
+ * Heading Titles 
+ * @ ViDA Heading Titles - h1, h2
+ */
+.panel.widget .widget-title.headline1,
+.so-panel.widget .widget-title.headline1,
+section .widget-title.headline1 {
+  padding-top: 15px;
+}
+
+	.panel.widget .widget-title.headline2,
+	.so-panel.widget .widget-title.headline2,
+	section .widget-title.headline2 {
+		font-size: 24px;
+		font-weight: normal;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	    color: #2f2f2f;	
+		text-align: center;
+	}
+	.headline2,
+	.headline3 {
+		text-align: center;
+	}
+
+	/**
+	 * Sub-Title
+	 * @ ViDA Title Bar
+	 */	
+	.vida_title_bar_widget .sub-title {		
+		font-size: 24px;
+		text-align: center;
+		color: inherit;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: bold;
+		width: 100%;
+		padding-right: 10px;
+		padding-left: 10px;
+		line-height: 1.3;
+	}
+	
+	/**
+	 * Excerpt / Intro-text
+	 * @ ViDA Title Bar
+	 */	
+	.vida_title_bar_widget .excerpt-text {
+		font-size: 20px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+
+/**
+ * Banner Header 
+ * @ViDA banner + optin
+ */
+
+.site-header.has-banner {
+
+}
+	.site-header.has-banner .welcome-info{
+		display: none !important;
+	} 
+	.has-banner:after {
+		position: absolute;
+		background-image: url(https://www.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/vida_background_640w.jpg)
+	}	
+	#vida-banner {
+		background: rgba(255,255,255,.8);
+	}
+/*
+	  .has-banner:after {
+		background-image: url(images/vida-banner-placeholder.jpg)
+	  }
+
+  #vida-banner {
+	position: relative;
+	display: table;
+	z-index: 99998;
+	margin: 0 auto;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	background: rgba(255,255,255,.8);
+  }
+  
+	#vida-banner >.container {
+		display: table-cell;
+		vertical-align: middle;
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#vida-banner h1{
+	  margin-bottom: 20px;
+	  line-height:1;
+	  font-family:arial,serif;
+	  font-size: 160%; 
+	  font-size: 4.8vmax;
+	}
+	
+		#vida-banner h1 span {
+			display: block;
+			margin-bottom:5px;
+		}
+	
+	#vida-banner .home-str1,
+	#vida-banner .home-str3	{
+		color:#074568;
+		font-family:"ITCAvantGardePro-MdObl";
+	}
+	
+	#vida-banner .home-str2,
+	#vida-banner .home-str4{
+		color:#3f7f9b;
+		font-family:"ITCAvantGardePro-Bold"; 
+		font-weight:bold;
+		font-style:italic;
+	}
+	
+	#vida-banner .home-str4 {
+		color:#074568;
+	}
+
+	#vida-banner h2{
+		color:#000000; 
+		font-family: 'RoadRadio';
+		font-style:initial; 
+		text-transform:uppercase;
+		font-size: 2.5vmax;
+		margin-bottom: 20px;
+	}
+	
+	
+	#vida-banner .banner-form .vida-form {
+		position: relative;
+	}
+		#vida-banner .banner-form .vida-form::before,
+	  #vida-banner .banner-form .vida-form:before {
+		position: relative;
+		content: "";
+		display: block;
+		margin: 0 auto;
+		max-width: 200px;
+		height: 2px;
+		background: #074568;
+	  }	
+	
+		#vida-banner .banner-form .vida-form h3 {
+			color: #074568;
+			font-family: 'Montserrat', sans-serif;
+			margin-bottom: 10px;
+			font-weight: normal;
+			font-size: inherit;
+		}
+		
+		#vida-banner .banner-form .vida-form input[type="email"],
+		#vida-banner .banner-form .vida-form input[type="text"]{
+			width: 100%;			
+			border: #bbb 1px solid;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#vida-banner .banner-form .vida-form input[type="submit"]{
+			width: auto;
+			min-width: 160px;
+		}
+*/
+
+		#vida-banner .banner-form .vida-form input[type="email"],
+		#vida-banner .banner-form .vida-form input[type="text"]{			
+			max-width: 360px;
+		}
+
+/**
+ * Header 
+ * @ViDA Logo, Menu (Desktop & Mobile) , Phone Number
+ */
+ 
+.sticky-wrapper {
+	/* height: inherit !important; */
+}
+
+.top-bar {
+    background-color: #1a4362;
+}
+	.is-sticky .top-bar {
+		border-top: #3f7f9b 1px solid;
+	}
+
+.top-bar > .container {
+	display: block;
+	/*padding-left: 5px !important;
+	padding-right: 5px !important;*/
+}
+
+/* Logo - Wrapper */ 
+.site-branding {
+	width: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 0;
+	padding-right: 2%;
+	z-index: 989;	
+}
+	.is-sticky .site-branding {
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-left: 0;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+		.site-logo {
+			max-width: 160px !important;
+		}
+			.is-sticky .site-logo {
+				-webkit-transition: all 0.2s;
+				transition: all 0.2s;
+			}
+		
+	/* Main Menu & Mobile Toggle Button */ 
+	.menu-toggle.btn {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		min-width: 20px !important;
+		z-index: 99999;
+		position: relative;
+		color: #444 !important;
+		z-index: 989;
+		float: right;
+		font-size: 20px;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+		.is-sticky  .menu-toggle.btn {
+			-webkit-transition: all 0.3s;
+			  transition: all 0.3s;
+			margin-top: 12px;
+			margin-bottom: 12px;
+			margin-right: 2%;
+			font-size: 18px;
+		}
+	
+	.main-navigation {
+		text-align: center;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		z-index: 987;
+	}
+	
+	  .main-navigation ul {
+		float: none;
+		margin: 0 auto;
+		font-size: 0;
+	  }  
+	  	
+	
+		  .main-navigation li {
+			position: relative;
+			float: none;
+			display: inline-block;
+			padding-bottom: 26px;
+			padding-top: 32px;
+		  }
+			
+			.main-navigation a {
+				font-size: 16px;
+				font-weight: 100;
+				font-family: 'ITCAvantGardePro-Md', 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+				text-decoration: none;
+			}
+				.main-navigation  a:hover,
+				.main-navigation .current-menu-item a{
+				  color: #25a2cb;
+				}
+		
+	/* Menu - Phone */
+	.vida-phone-no{
+		width: auto;
+		margin-top: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+		z-index: 988;
+	}
+	
+	.is-sticky .vida-phone-no{
+		margin-top: 5px;
+	}
+		#vida-header-phone{
+			margin-top: 0px;
+			width: auto;
+			text-align: right;	
+			padding-top: 23px;
+		}
+			.is-sticky #vida-header-phone{
+				padding-top: 11px;
+				-webkit-transition: all 0.2s;
+				transition: all 0.2s;
+			}
+		
+			#vida-header-phone a{
+				font-size: 18px;
+				text-decoration: none;
+				min-height: 36px;
+				display: inline-block;
+				color: white;
+				padding: 7px 15px 5px 28px;
+				font-weight: bold;
+				font-family: arial;
+				
+				background: url(images/header-tel.png) no-repeat left center transparent;
+				background-size: auto 28px;
+
+			}
+			
+		.is-sticky #vida-header-phone a{
+			padding-top: 5px;
+			background-size: auto 30px;
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;	
+		}
+		
+	/* Top Bar - Media Logos */ 	
+	#header-media-logos {		
+		height: auto;
+		-webkit-transition: height .3s;
+			transition: height .3s;
+	}
+/*	
+		#header-media-logos > img{		
+			-webkit-transition: height 1s;
+			transition: height 1s;
+			height: auto;
+		}
+*/			.is-sticky #header-media-logos {
+				height: 0px;
+			}
+	
+/**
+ * Footer 
+ * @ViDA Logo, Menu & Copyright
+ */
+
+.site-footer {
+	font-size: inherit;
+	padding: 30px 0 0;
+	border-top: none !important;
+	background-color: #074568;	
+	text-align:center;
+	color:rgba(255,255,255,0.3);
+	font-weight:600;	
+}
+	/* Footer Logo */ 
+	.site-footer .site-logo{
+		margin: 10px auto;
+		opacity: .9;
+	}
+	  .site-footer .site-logo:hover{
+		opacity: 1;
+	  }
+	
+	/* Footer Menu */ 
+	.footer-menu {
+	  padding: 10px 0 10px;
+	}
+	  .footer-menu #vida-footer-menu {
+		margin-bottom: 10px;
+		max-width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	  }	
+		.footer-menu #vida-footer-menu  a{
+			margin: 10px 5px;
+			font-size: 2em;
+			color: #FFFFFF;
+			font-weight: 500;
+			display: inline-block;
+			text-decoration: none !important;
+			text-transform: capitalize;
+			opacity: .9;
+		}		
+			.footer-menu #vida-footer-menu a:hover {
+			  color: #25A2CB;
+			  opacity: 1;
+			}			
+	  .footer-menu #vida-footer-menu li {
+		position: relative;
+	  }	  
+	  	.footer-menu #vida-footer-menu li:before {
+			content: "";
+			position: relative;
+			display: block;
+			border-left: none;
+			border-top: #565656 1px solid;
+			width: 25px;
+			height: 1px;
+			margin: 0 auto;
+		}
+			.footer-menu #vida-footer-menu li:first-child:before {
+				border-top: none;
+			}
+			
+	/* Copyright */
+	.site-footer .site-info.container {
+		max-width: 100%;
+		background: #043144;
+	}		
+		.site-footer .site-info {
+			font-size: 1.4em;
+			letter-spacing: 1px;
+			padding: 5px 5px;
+			font-weight: 500;
+		}
+		
+/*** End of ViDA styles ***/
+
+
+/***
+ ** ViDA Custom Content styling, background, button, text, rows, etc... 
+ ** 
+ **/ 
+
+.su-list.blue-circle-list {
+
+}	
+	.su-list.blue-circle-list ul > li{
+		padding-top: 0px !important;
+		padding-bottom: 20px !important;
+	}
+		.su-list.blue-circle-list ul > li > i{
+			font-size: 13pt;
+		}
+		
+.site-content {
+	font-size: 16px;
+	font-size: 1.6em;
+}
+
+.site-content p{	
+	line-height: 1.3;
+	margin-bottom:1em;
+}
+
+.site-content  ul li {
+	font-size: inherit;
+}
+
+/*back to up*/
+.vida_backtotop {
+	clear: both;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+  .vida_backtotop>a{
+	text-decoration:none !important;
+	color: #e8890c;
+	margin-left: 30px;
+	margin-right: 30px;
+  }
+    .vida_backtotop>a>i{	
+		font-size: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+  .vida_backtotop>a:hover {
+	opacity: .9;
+  }
+  
+/* custom bg colors */
+.vida-gray-bg { background-color: #ECECEC !important; }
+.vida-white-bg { background-color: #FFFFFF !important; }
+.vida-blue-bg { background-color: #074568 !important; color: #FFFFFF; }
+.vida-light-blue-bg { background: #407d9d !important; }
+.vida-sky-blue-bg { background: #f2f7fb !important; }
+
+/* custom text colors */
+.vida-dark-text { color: #2f2f2f !important;}
+.vida-blue-text { color: #074568 !important; }
+.vida-white-text { color: #FFFFFF !important; }
+
+/* custom helper classes */
+.strong-text,
+.strong-text * { font-weight: bold !important;}
+.light-text { font-weight: normal !important;}
+.italic-text { font-style: italic !important;}
+.underline-text { text-decoration: underline !important;}
+
+.vida-spacer {display: block; clear: both; margin: 10px; }
+
+/* arrows - custom row */
+.arr-down,
+.arrow-down-gray,
+.arrow-down-white,
+.arrow-down-blue {
+	position: relative; 
+	width: 100%;
+	padding-top: 30px !important;
+}
+	.arr-down:before,
+	.arrow-down-gray:before,
+	.arrow-down-white:before,
+	.arrow-down-blue:before {
+		clear: both;
+		content: '';
+		display: table;
+		position: absolute;
+		left: 50%;
+		margin-left: -85px;
+		width: 170px; 
+		height: 30px; 
+		border-left: 85px solid transparent;
+		border-right: 85px solid transparent;	
+		border-top-width: 30px;
+		border-top-style: solid;
+		font-size: 0;
+		line-height: 0;
+		top: 0;
+		z-index: 55;
+	}
+	
+	/* arrow colors */
+	.arrow-down-gray:before { border-top-color: #ECECEC; }
+	.arrow-down-white:before { border-top-color: #FFFFFF; }
+	.arrow-down-blue:before { border-top-color: #074568; }
+	
+	.vida-blue-bg.arr-down:before,
+	.vida-gray-bg.arr-down:before { border-top-color: #FFFFFF; }
+	
+		/* after - set but not used - seldom only - for overwriting - sample bottom home optin - used to inherit same border colors */
+		.arr-down:after,
+		.arrow-down-gray:after,
+		.arrow-down-white:after,
+		.arrow-down-blue:after {
+			clear: both;
+			content: '';
+			display: table;
+			position: absolute;
+			z-index: 56;
+		}
+		
+			.arrow-down-gray:after { border-top-color: #ECECEC; }
+			.arrow-down-white:after { border-top-color: #FFFFFF; }
+			.arrow-down-blue:after { border-top-color: #074568; }
+  
+	/* small arrow */
+	.arr-down.arr-sm,
+	
+	.arrow-down-gray.arrow-small,
+	.arrow-down-white.arrow-small,
+	.arrow-down-blue.arrow-small {
+		padding-top: 15px !important;
+	}
+		.arr-down.arr-sm:before,
+		.arrow-down-gray.arrow-small:before,
+		.arrow-down-white.arrow-small:before,
+		.arrow-down-blue.arrow-small:before {
+			margin-left: -35px;
+			width: 70px; 
+			height: 15px; 
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;	
+			border-top-width: 15px;			
+		}
+
+	
+
+/* Customized Widget Titles */
+
+	/* Narrow-width titles */
+	.panel.widget .narrow-title-width-1 > .widget-title,
+	.so-panel.widget .narrow-title-width-1 >.widget-title,
+	section  .narrow-title-width-1 >.widget-title,
+	.narrow-title-width-1  .widget-title,
+	.narrow-title-width-1  .sub-title,
+	.narrow-title-width-1  .excerpt-text	{
+		max-width: 920px !important;
+	}
+	
+	/* Narrow-width titles */
+	.panel.widget .narrow-title-width-1a > .widget-title,
+	.so-panel.widget .narrow-title-width-1a >.widget-title,
+	section  .narrow-title-width-1a >.widget-title,
+	.narrow-title-width-1a  .widget-title,
+	.narrow-title-width-1a  .sub-title,
+	.narrow-title-width-1a  .excerpt-text	{
+		max-width: 800px !important;
+	}	
+	
+	/* Narrow-width titles */
+	.panel.widget .narrow-title-width-2 > .widget-title,
+	.so-panel.widget .narrow-title-width-2 >.widget-title,
+	section  .narrow-title-width-2 >.widget-title,
+	.narrow-title-width-2  .sub-title,
+	.narrow-title-width-2  .excerpt-text	{
+		max-width: 700px !important;
+		padding-right: 10px;
+		padding-left: 10px;
+	}	
+
+	.so-panel.widget .light-title >.widget-title {
+		font-weight: normal !important;
+	}
+
+
+	/* widget-title vida-dark-title */
+	.so-panel.widget .vida-dark-text>.widget-title, section .vida-dark-text>.widget-title {color: #2f2f2f !important;}
+	/* widget-title vida-blue-title */
+	.so-panel.widget .vida-blue-text>.widget-title, section .vida-blue-text>.widget-title {color: #074568 !important;}
+	/* widget-title vida-white-title */
+	.so-panel.widget .vida-white-text>.widget-title, section .vida-white-text>.widget-title {color: #FFFFFF !important;}
+	/* widget-title vida-light-blue-title */
+	.so-panel.widget .vida-light-blue-title>.widget-title, section .vida-light-blue-title>.widget-title {color: #3F7F9B !important;}
+
+	/* widget-title align-left */
+	.so-panel.widget .title-left>.widget-title, section .title-left > .widget-title {
+		text-align: left !important;
+	}
+
+	
+/**
+ * ViDA Homepage Sections
+ */	
+
+	/* Introduction */
+	.introvida_bg { 
+		/* background: transparent url(https://www.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/introvida_bg.jpg) no-repeat center top !important; 
+		background: transparent url(https://www.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/introvida_bg_large.jpg) no-repeat center top !important;
+		background-size: cover !important;
+		background-size: auto 100%!important;*/
+		text-align: center;
+		padding-bottom: 15px !important;
+	}
+
+		.site-content .intro-sub-title {
+		  padding: 0px;
+		  font-size: 21px;
+		  font-family: 'Adobe Caslon Pro 2', 'Adobe Caslon Pro', Times, serif;
+		  text-align: center;
+		  color: #3f7f9b;		  
+		  margin: 0 auto 20px;
+		  max-width: 800px;
+		  line-height: 1.2;
+		  font-weight: normal;
+		}
+		
+		.intro-box {
+			padding: 5px 10px;
+			text-align: left;
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+			.site-content .intro-box h3.intro-sub-title {
+				/* font-size: 23px;
+				font-weight: bold;
+				max-width: 600px; */
+				margin-bottom: 0;
+			}
+			
+			.intro-box .new-grey-hr{
+				margin: 15px auto;
+				width: 200px;
+				display: block;
+				height: 2px;
+				background: #dedede;
+			}
+			
+	/* Media Outlets */	
+	.media-outlets {
+		/* 
+		background: url(https://www.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/media-outlets-bg.png) no-repeat center center;
+		background-size: contain !important; */
+	}
+		.media-outlets h3 {
+			padding: 15px 10px;
+			font-size: 20px;
+			color: #074568;
+			text-align: center;			
+			max-width: 560px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			line-height: 1.3;
+		}		
+		.media-outlets-img {
+			text-align: center;
+			margin-top: -20px;
+		}
+	
+	/* Tim Ferris */
+	.tim-ferris-wrapper {
+    background-attachment: initial;
+		/* background: transparent url(https://www.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/tim-ferris-bg-1024.jpg) no-repeat center center;
+		background-size: cover ; */
+	}
+
+		.tim-ferris-wrapper  .timcontent {
+			font-size: 28px;
+			line-height: 1.3;
+			text-align: center;
+			padding: 20px 10px;
+		}
+		
+		.tim-ferris-wrapper  .timcontent img {
+			max-width: 250px;
+		}
+		
+		.tim-ferris-wrapper .timcontent h2 {
+			font-size: inherit;
+			color:#074568;
+			font-family: 'Adobe Caslon Pro 2', 'Adobe Caslon Pro', Times, serif;
+		}
+		
+		.tim-ferris-wrapper .timcontent .videoiframe {
+			margin-top: 20px;
+		}
+	
+	/* Testimonials ViDA widget */
+	
+	#vida-testimonials {
+		padding-top: 15px;
+	}
+	
+	  #vida-testimonials .testimonial {		
+		margin-bottom: 15px;
+		background:url(images/testimonials_bg_left.png) 10px 0 no-repeat;
+		margin-top: 15px;
+		font-size: .78em;
+	  }
+		#vida-testimonials .testimonial.type-video {
+			background-image: none;
+		}
+		.single #vida-testimonials .testimonial {	
+			margin-bottom: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		 #vida-testimonials .testimonial-body {
+			font-size: 18px;
+			font-size: 1.8rem;
+			padding: 10px 5px;
+			background:url(images/testimonials_bg_right.png) right 90% no-repeat transparent;
+			font-family: 'Baskerville', Times, serif;
+			font-style:italic;
+			text-align:center;
+		}
+		  #vida-testimonials .testimonial.type-video > .testimonial-body {
+			background-image: none;
+			padding-top: 0 !important;
+		  }
+		
+			#vida-testimonials .testimonial-body:after{display:none;}
+			
+			#vida-testimonials .client-name {
+				margin-top: 0;
+				margin-bottom: 0px;
+				font-size: 16px;
+				font-weight: bold;
+				color:#074568;
+				font-family: 'Merriweather', Georgia, serif !important;
+			}
+			
+			#vida-testimonials  .client-function {
+				font-size: 14px;
+				color:#777777;
+				font-family: 'Merriweather', Georgia, serif; 
+			}
+		
+
+	/* Your Perfect Girl section */
+	.your-perfect-girl {
+		border-top: #1ba9af 1px solid;
+		position: relative;
+		padding: 20px;
+		overflow: visible;
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+54,ffffff+84,ffffff+84,ececec+99,ececec+99,ececec+100 */
+		background: rgb(255,255,255); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 84%, rgba(255,255,255,1) 84%, rgba(236,236,236,1) 99%, rgba(236,236,236,1) 99%, rgba(236,236,236,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 84%,rgba(236,236,236,1) 99%,rgba(236,236,236,1) 99%,rgba(236,236,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 84%,rgba(255,255,255,1) 84%,rgba(236,236,236,1) 99%,rgba(236,236,236,1) 99%,rgba(236,236,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+
+
+	}
+	
+		.your-perfect-girl:before{
+			border-top-color: #1ba9af
+		}
+		
+		.your-perfect-girl:after{
+			top: -1px;
+			left: 50%;
+			margin-left: -35px;
+			width: 70px; 
+			height: 15px; 
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
+			border-top-style: solid;
+			border-top-width: 15px;
+		}
+		
+	.your-perfect-girl table,
+	  .your-perfect-girl table > tbody > tr > td {
+			border: none !important;
+		}
+
+
+	/* Home Bottom Optin */
+	.home-bottom-optin {
+		border-top: #1ba9af 1px ridge;
+		background: url(https://www.virtualdatingassistants.com/files/images/assets/home-optin-bg.png) center 10px no-repeat;
+		background-size: auto;
+		overflow: visible;
+		font-size: .8em;
+	}
+	
+		.home-bottom-optin:before {
+			border-top-color: #1ba9af
+		}
+		
+			.home-bottom-optin:after{
+				top: -1px;
+				left: 50%;
+				margin-left: -85px;
+				width: 170px; 
+				height: 30px; 
+				border-left: 85px solid transparent;
+				border-right: 85px solid transparent;
+				border-top-style: solid;
+				border-top-width: 30px;
+			}
+		
+		#home-bottom-form input[type="text"],
+		#home-bottom-form input[type="email"] {
+			padding: 8px 24px;
+			width: 100%;
+			max-width: 350px;
+		}
+		
+		#home-bottom-form .submit-input-wrapper{
+			display: block;
+			width: 100%;
+			max-width: 350px;
+			margin: 0 auto;
+			
+		}
+
+/**
+ * ViDA What We Do Page
+ */
+ 
+.panel-grid-cell section#clients {
+	padding: 30px 0 40px;
+}
+
+	#clients .container {
+		width: 100% !important;
+		max-width: 1366px;
+	}
+
+	  #clients .widget-title {
+		display: none !important;
+	  }
+  
+  /* carousel */
+  
+  .carousel {
+	display: list-item;
+	list-style: none;
+	text-align: center;
+  }
+	.carousel > .clearfix {
+		display: inline-block;
+	}
+  
+  .slick-prev:before, .slick-next:before {
+	color: #e72a37;
+  }
+ 
+ 
+/**
+ * ViDA How It Works Page
+ */
+ 
+/* Steps*/
+.step {
+	height: 210px;
+	background-color: #E8890C;
+	color: #2f2f2f;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Baskerville', Times, serif;
+	font-size: 22px;
+}
+
+.step-icon {
+	display: table;
+	margin: 20px auto 0;
+	font-size: 45px;
+	color: #E8890C;
+	background-color: #fff;
+	line-height: 1;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+}
+.step-icon .fa {
+	margin-top: 12px;
+}
+
+.stepp {
+	height: 210px;
+	background-color: #FFF6D1;
+	margin: 0;
+	padding: 10px;
+	color: #2f2f2f;
+	text-align: center;
+	font-family: 'Baskerville', Times, serif;
+	font-size: 22px;
+}
+.stepp-icon {
+	display: table;
+	margin: 20px auto 0;
+	font-size: 45px;
+	color: #fff;
+	background-color: #E8890C;
+	line-height: 1;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+}
+.stepp-icon a:hover {
+  color: #fff;
+}
+.stepp-icon .fa {
+	margin-top: 12px;
+}
+.stepvideo {
+	height: 210px;
+	margin: 0;
+	padding: 0! important;
+}
+.stepvideo img {
+  height: 100%;
+}
+.step-icon a, .stepp-icon a, .col-md-4.step a, .col-md-4.stepp a {
+	color: inherit;
+}
+
+ 
+ 
+/**
+ * ViDA About Us Page
+ * - subject for change
+ */
+
+#teambios,
+.vida-teambios {
+	width: 100%;
+	padding: 0 0 10px 0;
+	margin: 0 0 30px !important;
+}
+
+	.profile {
+		min-height: 1px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		padding: 0 20px;
+	}
+	
+	.profile .prof_h {
+		text-align: center !important;
+	}
+	
+	.profile .prof_h img{
+		border: #CCC 1px solid;
+		height: auto;
+		width: 100%;
+		max-width: 200px;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+	}
+	
+		.profile .prof_h .su-lightbox img{
+			cursor: pointer;
+		}
+	
+	.prof_row2 .profile .prof_h img{
+		height: auto;
+		width: 100%;
+		max-width: 100px;
+	}
+	
+	.profile .prof_h h3{
+		margin-bottom: 0;
+		color: #333 !important
+	}
+	
+	.profile .prof_h h4{
+		color: #555 !important
+	}
+	
+	.profile .prof_c {
+		text-align: center;
+	}
+	
+		.prof_row2 .profile .prof_c {
+			font-size: 14px;
+			line-height: 18px;
+		}
+    
+    .prof_c {
+        max-width: 440px;
+        margin: 10px auto;
+    }
+
+	.mfp-content .su-lightbox-content, #su-generator .su-lightbox-content {
+		font-size: 1.6em;
+	}
+
+ 
+/**
+ * ViDA Press Page
+ */
+ 
+.videoiframe {
+    text-align: center;
+}
+	.videoiframe_trigger {
+		display: inline-block;
+	}
+
+#media_wrapper {
+	font: normal 18px 'Baskerville', Times, serif;
+	height: auto;
+	margin: 30px auto 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+	/* Image Box Style */
+	#media_wrapper .box {
+		border: 5px solid #fff;
+		cursor: pointer;
+		height: 180px;
+		float: none;
+		margin: 5px;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+			-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+			-moz-box-shadow: 1px 1px 1px 1px #ccc;
+			box-shadow: 1px 1px 1px 1px #ccc;
+	}
+	#media_wrapper .box img {
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	}
+
+	/* Caption Common Style */
+	#media_wrapper .box .caption {
+		background-color: rgba(0,0,0,0.8);
+		position: absolute;
+		color: #fff;
+		z-index: 100;
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;	
+			transition: all 300ms ease-out;
+		left: 0;
+	}
+
+	/** Caption 2: Full Width & Height **/
+	#media_wrapper .box .full-caption {
+		width: 100%;
+		height: 180px;	
+		top: -190px;
+		padding: 15px;
+	}
+
+	/** Full Caption :hover Behaviour **/
+	#media_wrapper .box:hover .full-caption {
+		-moz-transform: translateY(100%);
+		-o-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		opacity: 1;
+		transform: translateY(100%);
+	}	
+
+
+		
+/**
+ * ViDA Optin Forms
+ */  
+.vida-wide-form,
+.vida-wide-form.panel-row-style{
+	background: #074568;	
+	padding: 35px 0px !important;
+}
+	.vida-wide-form .container {
+		width: 100%;
+		max-width: 1366px;
+	}
+	.vida-wide-form.vida-light-blue-bg{
+		border-bottom: #3f7f9b 1px solid;
+	}
+
+.vida-wide-form .su-row.vida-form,
+  .vida-wide-form .vida-form,
+	.vida-flex-display,
+	  .vida-flex-display1 > *{
+	margin: 0;
+	font-size: 24px;
+	clear: both;
+	position: relative;	
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	
+	display: -webkit-box;  /* iOS 6-, OLD Safari 3.1-6, BB7 */
+	display: -webkit-flex; /* NEW Safari 6.1+. iOS 7.1+, BB10*/	
+	display: -ms-Flexbox;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+
+   
+   -webkit-flex-direction: row;
+   
+   
+ 	-webkit-box-lines: multiple;
+	-moz-box-lines: multiple; 
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	
+
+	-webkit-flex-flow: row wrap;
+	-webkit-flex-wrap: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;	
+	flex-flow: row wrap;	
+	
+    /* Flex column spacing, use: space-between or center */
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;	
+	justify-content: center;
+	
+	/* Flex row spacing */
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-moz-align-items: center;
+	-ms-align-items: center;	
+	align-items: center;
+
+	-ms-flex-line-pack: center;
+   -webkit-align-content: center;
+   align-content: center;
+   
+
+
+
+  }
+  
+	.su-row.vida-form >.su-column{
+		width: initial;
+		margin: 0 !important;
+		max-width: 100%;
+		position: inherit;
+	}
+
+	
+	.vida-form h2, .su-row.vida-form h2,
+	.vida-form h3 , .su-row.vida-form h3 {
+		font-family: 'Adobe Caslon Pro 2', 'Adobe Caslon Pro', Times, serif;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 1.1;
+		display: block;
+		font-size: inherit;
+		font-weight: bold;
+	}
+	
+	.su-row.vida-form input,
+ 	.vida-form  input{
+		padding: 5px 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		min-width: 246px;
+		max-width: 320px;
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+
+	
+/**
+ *  ViDA Buttons
+ */ 
+ 
+	/* regular submit buttons */
+	input[type="submit"], .button,
+	.vida-button,
+	html input[type="button"],
+	input[type="reset"],
+	input[type="submit"]	{
+		text-decoration: none !important;
+		font-size: 18px;
+		font-size: 1.8rem;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-color: #e72a37;
+		background: rgb(231,42,55);
+		background: rgba(231,42,55,1);
+		margin: 10px auto;
+		padding: 8px 14px;
+		color: #FFFFFF !important;	
+		font-weight: 400;
+		font-family: FontAwesome, 'Montserrat', 'RoadRadio', sans-serif !important;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		text-transform: uppercase;
+		outline: none !important;
+		line-height: 1.5;
+		min-width: 160px;
+		border: none;
+		text-align: center;
+	}
+	
+		/* Orange Button */
+		.vida-orange-button{
+			background-color:#fa9005 !important;
+			box-shadow: 0 5px 0 #e95f05 !important;
+		}
+		/* Blue Button */
+		.vida-button.blue-btn {			
+			background: rgb(63,123,156);
+			background: rgba(63,123,156,1);
+			background-color: #3F7B9C !important;
+		}
+		/* Pink Button */
+		.vida-button.pink-btn {			
+			background: rgb(187,93,104);
+			background: rgba(187,93,104,1);
+			background-color: #BB5D68 !important;
+		}
+		/* Yellow Button */
+		.vida-button.yellow-btn {			
+			background: rgb(254, 158, 12);
+			background: rgba(254, 158, 12, 1);
+			background-color: rgb(254, 158, 12) !important;
+		}
+	
+		/* for a links button type */
+	
+		.site-content  input[type="submit"]:hover, 
+		.site-content  .button:hover,
+		.site-content .vida-button:hover,
+		.widget-area .button:hover,
+		.widget-area a.vida-button:hover{
+			background-color: #e73e4a;
+			background: rgba(231,42,55,.9);
+			box-shadow: none !important;
+			color: #FFFFFF !important;
+		}
+		
+	  /* play icon buttons; for input[type="submit"] buttons, please refer to vida-cutom.js which appends &#xf04b; to the the value  */
+	  .vida-button.vida-icon-play {
+		position: relative;	  
+	  }
+	    .vida-button.vida-icon-play:before {
+			position: relative;
+			display: inline-block;
+			content: "\f04b";
+			margin-right: 10px;
+			margin-left: 0px;
+		}
+		
+
+
+/* vida_textarea shortcode */
+.textarea,
+.vida_textarea {
+   	max-width: 700px;
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+    font-family: inherit;
+	font-size: 20px;
+	color: #2f2f2f;
+}
+
+	.vida_textarea.with_border {
+		background: rgba(255,255,255,0.35);
+		border-radius: 3px;
+		box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+		padding: 20px;
+	}
+	
+	.widget-area .widget .vida_textarea.with_border {
+		box-shadow: none;
+		border-radius: 0;
+		font-size: 18px;
+		border: 1px solid #efefef;
+	}
+	
+
+
+
+/* related posts */
+.crp_related {
+	clear: both;
+	margin: 10px 0;
+}
+.crp_related h3 {
+	margin: 10px 0 30px !important;
+	clear: both;
+}
+/*
+.crp_related ul {
+	list-style: none;
+	margin: 5px -5px !important;
+	padding: 0 !important;
+	display: table;
+	border-spacing: 5px;
+	width: 100%;
+}
+.crp_related li {
+	display: table-cell;
+	position: relative;	
+	vertical-align:top;
+	text-align: center;
+	opacity: .7;
+	border: #aaaaaa 1px solid;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;	
+}
+	.crp_related li:hover {
+		opacity: 1;
+		border-color: #25a2cb;
+	}
+.crp_related a {
+	display: inline-block;
+	text-decoration: none;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+	height: 100%;
+    width: 100%;
+}
+  .crp_related .crp_title {
+	background: rgb(41, 41, 41);
+	background: rgba(41, 41, 41, 0.9); 
+	position: absolute;
+	left:0;
+	bottom: 0;	
+	height: inherit;
+	padding: 5px;
+	color: #fff;
+	font-size: .8em;
+  }
+	  .crp_related li:hover .crp_title {
+		background: rgb(26, 67, 98);
+		background: rgba(26, 67, 98, 0.9);
+		color: #FFFFFF !important;
+		text-shadow: #25a2cb 0em 0em .2em;
+	  }
+.crp_related .crp_thumb {
+	margin-top: 5px;
+}
+*/
+
+.vida-white-gray-fade-vertical{	
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 35%, rgba(236,236,236,1) 60%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 35%, rgba(236,236,236,1) 60%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 35%, rgba(236,236,236,1) 60%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+}
+
+#tve_leads_end_content {
+	border: 0 !important;
+}
+
+
+
+/* End ViDA Custom Content styling */
+
+
+/*****************************
+ ****** Media Queries ********
+ *****************************/	
+ 
+/* Custom Styles - Mobile First */
+
+  /*480px*/
+  @media (min-width: 480px) {
+	
+	body {
+		/*font-size: 16px;
+		line-height: 1.4;*/
+		
+	}
+	
+	.is-sticky .site-branding {
+		margin-left: 1%;
+	}
+	.panel.widget .widget-title,
+	.so-panel.widget .widget-title,
+	section .widget-title {
+		font-size: 28px;
+	}	
+	
+	/* row with .vida-title-only class */
+	.panel-grid .panel-row-style.title-only {
+		padding-bottom: 15px;
+	}
+		
+		.vida_video_wrapper {  
+			margin:10px auto 10px;
+		}
+		input[type="submit"], .button,
+		.vida-button,
+		html input[type="button"],
+		input[type="reset"],
+		input[type="submit"]	{
+			min-width: 220px;
+		}
+		input[type="submit"],
+		.vida-button {
+			font-size: 18px;
+		}
+		.su-row.vida-form input,
+		.vida-form  input{
+			padding: 8px 12px;	
+			font-size: 16px;			
+		}			
+		.vida-form h2, .su-row.vida-form h2,
+		.vida-form h3, .su-row.vida-form h3 {
+			font-size: 28px;
+			line-height: 1.3
+		}
+		
+		.su-row.vida-form >.su-column.su-column-size-1-2{
+			margin-top: 20px;
+		}
+		.su-row.vida-form >.su-column.su-column-size-1-4 {
+			max-width: 50% !important;
+			width: auto !important;
+			padding: 0 10px;
+		}
+	
+	.site-content .intro-sub-title {
+		font-size: 22px;
+	}
+		.site-content .intro-box h3.intro-sub-title {
+			font-size: 24px;
+		}
+			.intro-box .new-grey-hr{
+				margin: 20px auto;
+			}
+		
+		.tim-ferris-wrapper .timcontent h2 {
+			font-size: 32px;
+		}
+
+		#vida-testimonials .client-name{font-size:22px;}
+		#vida-testimonials .client-function{font-size:18px;}
+		
+  }
+
+  /*768px*/
+  @media (min-width: 768px) {
+
+	.site-content {
+		font-size: 18px;
+		font-size: 1.8em;
+		line-height: 1.4;
+	}
+	.panel-grid .panel-row-style {
+		padding-bottom: 30px;
+	}
+	.is-sticky .site-branding {
+		padding-top: 8px;
+	}
+	.site-logo {
+		max-width: 190px !important;
+	}
+	  .is-sticky .site-logo {
+		max-width: 180px !important;
+	  }
+	
+	.main-navigation a {
+		font-size: 15px;
+	}	
+		
+		#vida-header-phone a{
+			font-size: 19px;
+			padding-left: 36px;
+			background-size: auto 36px;
+		}
+		
+		.is-sticky #vida-header-phone a{
+			font-size: 18px;
+			padding-left: 32px;
+		}
+		
+	#vida-banner {
+		background: none;
+		background: transparent;
+	}
+	
+	.site-footer .site-info {
+		font-size: 1.6em;			  
+	}
+		.site-footer .site-logo{
+			margin: 15px auto;
+		}	
+
+	.footer-menu #vida-footer-menu li {
+		display: inline;
+		margin-right: 5px;
+	  }		  
+		.footer-menu #vida-footer-menu li:before {
+			content: "";
+			position: relative;
+			display: inline-block;
+			border-top: none;
+			border-left: #aaa 1px solid;			
+			width: 6px;
+			height: 21px;
+			margin-bottom: -5px;
+		}		
+			.footer-menu #vida-footer-menu li:first-child:before,
+			.footer-menu #vida-footer-menu li.next-line-item:before {
+				width: 100%;	
+				display: block;
+				height: 1px;
+				border-left: none;
+				clear: both !important;
+			}		
+		.footer-menu #vida-footer-menu {
+			margin-bottom: 30px;
+		}		
+		.footer-menu #vida-footer-menu  a{
+			font-size: 24px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+	.panel.widget .widget-title,
+	.so-panel.widget .widget-title,
+	section .widget-title {
+		font-size: 32px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+		.so-panel.widget .large-title>.widget-title, section .large-title> .widget-title {
+			font-size: 32px;
+		}	
+		.so-panel.widget .medium-title>.widget-title, section .medium-title> .widget-title {
+			font-size: 28px;
+		}
+		.so-panel.widget .small-title>.widget-title, section .small-title> .widget-title {
+			font-size: 24px;
+		}
+		
+	.so-panel.widget h4.widget-title,		
+	.vida_title_bar_widget .sub-title {		
+		font-size: 28px;	
+	}
+	
+	.vida_title_bar_widget .excerpt-text {
+		font-size: 24px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* rows with title only */
+	.title-only .panel.widget  .widget-title, 
+	.title-only .so-panel.widget   .widget-title, 
+	.title-only section  .widget-title {
+		margin-top: 20px !important;
+		margin-bottom: 20px !important;
+	}
+	
+	/*headline2*/
+	.panel.widget .widget-title.headline2,
+	.so-panel.widget .widget-title.headline2,
+	section .widget-title.headline2 {
+		font-size: 28px;
+		font-weight: bold;
+	}
+		
+		.su-row.vida-form input,
+		.vida-form  input{
+			padding: 10px 12px 9px;
+			font-size: 16px;
+			min-width: 275px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.vida-form h2, .su-row.vida-form h2, 
+		.vida-form h3, .su-row.vida-form h3 {
+			font-size: 32px;
+		}  
+  
+		input[type="submit"],
+		.vida-button {
+			padding: 9px 16px;
+			font-weight: 400;
+			border-radius: 7px;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			font-size: 19px;
+		}
+		
+	.site-content .intro-sub-title {
+		font-size: 23px;
+		padding: 0 20px;
+	}
+		.site-content .intro-box h3.intro-sub-title {
+			font-size: 25px;
+		}
+			.intro-box .new-grey-hr{
+				margin: 25px auto;
+			}
+			
+	.media-outlets h3 {
+		padding: 20px 30px;
+		font-size: 24px;
+		line-height: 1.4;
+		margin-top: 10px;
+	}
+
+	
+	.tim-ferris-wrapper  .timcontent{
+		margin-left: -20px;
+		padding: 20px 20px;
+	}
+		.tim-ferris-wrapper  .timcontent h2 {
+			font-size:32px;
+			line-height: 1.2;
+		}
+		.tim-ferris-wrapper  .timcontent img {
+			max-width: 280px;
+			margin: 15px auto;
+		}
+		.tim-ferris-wrapper .timcontent .videoiframe {
+			margin: 25px auto;
+		}
+	
+	#vida-testimonials {
+		padding-top: 10px;
+	}
+	
+		#vida-testimonials .testimonial {
+			margin-bottom: 25px;
+		}
+		
+			#vida-testimonials .testimonial-body {
+				padding:20px;
+				font-size: 20px;
+				line-height: 1.2;
+			}
+	
+  }
+
+  
+  /*min992px*/
+  @media (min-width: 992px) {
+  
+	.sticky-wrapper {
+		background: transparent !important;
+	}
+		.site-logo {
+			max-width: 210px !important;
+		}	
+	
+  	.site-content {
+		font-size: 20px;
+		font-size: 2em;
+		line-height: 1.5;
+	}
+	
+		.site-content .post-edit-link {
+			position: fixed;
+			z-index: 9998;
+			right: 0;
+			padding: 5px 10px;
+			font-size: 1.4rem;
+			background: #333;
+			color: #FFF;
+			bottom: 10%;
+			text-decoration: none !important;
+		}
+  
+	.vida-wide>.panel-grid-cell>.container,
+	.container.vida-wide {
+		width: 100%;
+		max-width: 1366px;
+	}
+	
+	.site-branding {
+		margin-left: 0;
+		padding-left: 2%;
+	}
+	
+		.is-sticky .site-branding {
+			margin-left: 1%;
+		}
+	      
+		.is-sticky .main-navigation li {
+			padding-left: 8px;
+			padding-right: 9px;
+		}
+		
+	  .main-navigation a {
+			font-size: 16px;
+	  }
+		#vida-header-phone {
+			margin-top: 0px;
+		}
+	.vida-phone-no {
+		
+	}
+	  .is-sticky .vida-phone-no {
+		
+	  }
+		.is-sticky #vida-header-phone {
+			margin-top: -2px;
+		}
+		
+		.is-sticky #vida-header-phone a {
+			font-size: 18px;
+			background-size: auto 30px;
+		}
+		
+	
+	#vida-banner {
+		padding: 10px 20px;
+	}
+		#vida-banner .banner-form .vida-form h3 {
+			font-size: 18px;
+		}	
+			#banner-form .vida-form input[type="submit"]{
+				min-width: 180px;
+			}
+		
+	.panel.widget .widget-title,
+	.so-panel.widget .widget-title,
+	section .widget-title {
+		margin: 30px auto;
+		font-size: 40px;
+	}
+	/*headline2*/
+	.panel.widget .widget-title.headline2,
+	.so-panel.widget .widget-title.headline2,
+	section .widget-title.headline2 {
+		font-size: 32px;
+		font-weight: bolder;
+	}
+	.so-panel.widget h4.widget-title{
+	  font-size: 6vh;
+	  font-size: 36px;
+	}
+	  .so-panel.widget .large-title>.widget-title, section .large-title> .widget-title {
+			font-size: 36px;
+		}
+	  .so-panel.widget .medium-title>.widget-title, section .medium-title> .widget-title {
+			font-size: 32px;
+		}
+	  .so-panel.widget .small-title>.widget-title, section .small-title> .widget-title {
+			font-size: 28px;
+		}
+	
+		.su-row.vida-form input,
+		.vida-form  input{
+			padding: 10px 15px;
+			font-size: 17px;			
+		}
+		
+		input[type="submit"],
+		.vida-button {
+			font-size: 20px;
+			padding: 9px 18px;
+			font-weight: 700;
+			border-radius: 8px;
+			-moz-border-radius: 8px;
+			-webkit-border-radius: 8px;
+		}
+		
+		a.vida-button.vida-icon-play {
+			padding: 13px 18px !important;
+		}
+	.media-outlets h3 {
+		font-size: 28px;
+		line-height: 1.5;
+		padding: 50px 35px;
+	}
+	.intro-box {
+		padding: 0px 0px;
+	}
+	.site-content .intro-sub-title {
+		font-size: 24px;
+	}
+		.site-content .intro-box h3.intro-sub-title {
+			font-size: 26px;
+		}	
+	
+
+  .strategy-boxes  .strategy-game-plan-list {
+	padding: 20px 0 20px ;
+	display: table;
+	table-layout:fixed;
+	border-collapse: inherit;
+	width: 100%;
+	max-width: 1096px;
+	z-index: 12;
+	min-height: 246px;
+  }
+	.strategy-game-plan-list > li {
+		position: relative;
+		display: table-cell;
+		width: 33%;
+		padding: 30px 30px;
+		vertical-align: middle;		
+		z-index: 1;
+	}  	
+	.strategy-game-plan-list > li:before {
+		display: none !important;
+	}
+	.strategy-game-plan-list > li:after {
+		display: block;
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		bottom: 0;
+		margin-left: -123px;
+		/*left: calc(50% - 123px);
+		top: calc(50% - 123px);	*/
+		width: 246px;
+		height: 246px;
+		
+		max-width: 100%;
+		max-height: 100%;
+		
+		background: #D9E5EB;
+		-moz-border-radius: 100%;
+		-webkit-border-radius: 100%;
+		border-radius: 100%;
+		border: 0;
+	}	
+	
+	
+	.tim-ferris-wrapper 	{
+		/*
+		background: transparent url(https://www.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/tim-ferris-bg.jpg) no-repeat center top;
+		background-size: contain;
+		*/
+		min-height: 490px;
+		
+	}
+
+	  .tim-ferris-wrapper .timcontent{
+		padding: 30px 40px 10px;
+		margin-left: 0px;
+	  }
+		
+		.tim-ferris-wrapper .timcontent img{
+			margin: 20px auto;
+			max-width: 300px;
+		}
+		
+		.tim-ferris-wrapper .timcontent h2 {
+			font-size: 34px;
+		}
+		
+		.tim-ferris-wrapper .timcontent .videoiframe {
+			margin: 35px auto;
+		}
+	
+		#vida-testimonials .testimonial {
+			margin-bottom: 30px;
+		}
+		
+			#vida-testimonials .testimonial-body {
+				padding:30px;
+				font-size: 22px;
+				line-height: 1.3;
+			}
+			#vida-testimonials .testimonial.odd.last{
+			    margin-left: 25% !important;
+			}
+	.blog .entry-header,
+	.archive .entry-header,
+	.search .entry-header {
+		padding-left: 10px;
+	}
+		.blog .entry-header:before,
+		.archive .entry-header:before ,
+		.search .entry-header:before {
+			position: absolute;
+			margin-top: 0;
+			top: 21px;
+			left: -59px;
+			margin-bottom: 0;
+		}		
+	.single .entry-header {
+		padding-left: 37px;
+	}
+		.single .entry-header:before {		
+			position: absolute;
+			margin-top: 0;
+			top: 21px;
+			left: -37px;
+			margin-bottom: 0;
+		}
+	.entry-header > .entry-meta {
+		text-align: left;
+	}		
+	.site-footer .site-logo{
+		margin: 25px auto;
+	}
+	
+		
+  }
+  
+
+	@media screen and (min-width:992px) and (max-width:1199px) {
+
+		.site-branding {
+		    margin-left: 0;
+			max-width: 210px;
+		}
+			.is-sticky .site-branding {
+				margin-left: 1%;
+			}
+		.vida-phone-no{
+		    padding-right: 1%;
+		}
+			.is-sticky .vida-phone-no {
+				padding-left: 2%;
+				padding-right: 1%;
+			}
+
+		.is-sticky #vida-header-phone{
+			margin-top: 0px;
+			padding-top: 8px;
+		}
+			#vida-header-phone a {
+				padding-left: 10px;
+			}
+				.is-sticky #vida-header-phone a {
+					padding-left: 8px;
+				}
+			
+			#vida-header-phone a span.phone-digits {
+				display: none;
+			}
+		.tim-ferris-wrapper .timcontent {
+			padding-top: 30px;
+		}
+	}
+	
+	
+  /*min1200px*/
+	@media (min-width: 1200px) {	
+	
+	  .main-navigation li {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-right: 4px;
+		margin-left: 2px;
+	  }
+		  .is-sticky .site-logo {			
+			margin-left: 35px;
+		  }	
+			.is-sticky #vida-header-phone a {
+				font-size: 18px;
+				background-size: auto 30px;
+				margin-right: 18px;
+			}
+		.is-sticky .main-navigation li {
+			margin-right: 2px;
+			margin-left: 4px;
+		}
+			
+		.panel.widget .widget-title,
+		.so-panel.widget .widget-title,
+		section .widget-title {
+			max-width: 1170px;
+		}
+		
+		.vida-wide-form .su-row.vida-form,
+		.vida-wide-form .vida-form {
+
+			-webkit-justify-content: space-between;
+			-moz-justify-content: space-between;
+			-ms-justify-content: space-between;
+			justify-content: space-between;
+
+			-webkit-flex-flow: row;
+			-moz-flex-flow: row;
+			-ms-flex-flow: row;
+			flex-flow: row;
+			
+		}
+		
+		.su-row.vida-form >.su-column {
+			width: auto !important;
+		}
+		
+		.su-row.vida-form >.su-column.su-column-size-1-2{
+			margin-top: 0px;
+			max-width: 100%;
+		}
+
+		.su-row.vida-form >.su-column.su-column-size-1-4 {
+			max-width: 100%;
+			padding: 0px;
+		}
+		
+
+		
+	}
+	
+	
+	@media (min-width: 1200px) {
+		
+	}
+	
+	
+	/*min1400px*/
+	@media (min-width: 1440px) {
+	
+		html {
+			font-size: 80%;
+		}	
+		
+		#vida-banner .banner-form .vida-form input[type="email"], #vida-banner .banner-form .vida-form input[type="text"] {
+			font-size: 1.3vmax;
+			max-width: 24vw !important;
+			padding: .4vmax 1vmax;
+		}
+		
+		#vida-banner .banner-form .vida-form h3 {
+			font-size: 1.4vmax !important;
+			line-height: 2.5vmax;
+		}
+		
+		#vida-banner .banner-form .vida-form button[type="submit"] {
+			font-size: 1.4vmax;
+			padding: .4vmax 1.4vmax;
+			margin: 1.5vmax auto;
+			min-width: 14vmax !important;
+		}	
+
+		/*	
+		.introvida_bg {
+			background-size: contain !important;
+		}
+		*/
+		
+		.tim-ferris-wrapper .timcontent img{
+			margin: 20px auto;
+		}
+		
+		.tim-ferris-wrapper .timcontent h2 {
+			font-size: 36px;
+		}
+		
+		.tim-ferris-wrapper .timcontent .videoiframe {
+			margin: 40px auto;
+		}
+		
+		
+	}
+	
+	  
+	/*min1696px*/
+	@media (min-width: 1696px) {
+
+		html {
+			font-size: 80%;
+		}	
+	
+	}
+	  
+	/*min1920px*/
+	@media (min-width: 1920px) {
+	
+		html {
+			font-size: 100%;
+		}
+	
+		.container {
+			max-width: 1440px;
+		}
+		/*
+		.top-bar,
+		.vida-floating-button,
+		#header-media-logos,
+		.site-content,
+		.site-footer{
+			zoom: 1.5;
+		}
+		*/
+		.vida-wide>.panel-grid-cell>.container, .container.vida-wide {
+			max-width: 1660px;
+		}
+		.admin-bar .is-sticky .top-bar {
+			margin-top: 18px;
+		}
+		.main-navigation a {
+			font-size: .8vw;
+		}
+		.vida-phone-no {
+			font-size: 1em;
+		}
+		.is-sticky #vida-header-phone a {
+			font-size: 2em;
+		}		
+		.blog .content-area,
+		.single .content-area {
+			width: 980px;
+		}
+	}
+
+	  
+	/*min2400px*/
+	@media (min-width: 2400px) {
+	
+		.container {
+			
+		}
+		/*
+		.top-bar,
+		.vida-floating-button,
+		#header-media-logos,
+		.site-content,
+		.site-footer{
+			zoom: 1.7;
+		}
+		*/
+	
+	}
+	
+	  
+	/*min3600px*/
+	@media (min-width: 3600px) {
+	
+		.container {
+			
+		}
+		/*
+		.top-bar,
+		.vida-floating-button,
+		#header-media-logos,
+		.site-content,
+		.site-footer{
+			zoom: 2.5;
+		}
+		*/
+		.main-navigation a {
+			font-size: .5vw;
+		}
+	
+	}
+
+		
+	  
+	/*min4400px*/
+	@media (min-width: 4400px) {
+	
+		.main-navigation a {
+			font-size: .4vw;
+		}
+	
+	}
+	
+	
+/* Custom Media Styles - Desktop First */
+	@media (max-width: 1120px) {
+
+		.su-row.vida-form >.su-column.su-column-size-1-2 {
+			width: 100% !important;			
+		}
+		.vida-wide-form .su-row.vida-form,
+		.vida-wide-form .vida-form,
+		.su-row.vida-form {
+			-webkit-box-orient: vertical;
+		}
+
+	}
+	
+	@media (max-width: 1024px) {
+	
+		.site-header .header-image {
+		
+			position: absolute;
+			height: 100%;
+			width: auto;
+			max-width: none;
+			display: none;
+		}
+		
+		.has-banner:after {
+		    content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-position: center top;
+			background-attachment: fixed;
+			background-size: cover !important;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100%;
+		}
+	
+	}
+
+
+	@media (max-width: 991px) {
+
+		.container.vida-wide {
+			width: 100%;
+			max-width: 100%;
+		}
+		.is-sticky .top-bar {
+			position: fixed !important;
+		}
+		
+		.your-perfect-girl table > td,
+		.your-perfect-girl table > tbody > tr > td {
+			display: block;
+			width: 100% !important;
+			text-align:center;
+		} 
+
+	  /*mobile menu*/
+	  .main-navigation {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 10px !important;
+
+		-webkit-transition: all 0.3s !important;
+		-moz-transition:  all 0.3s !important;
+			transition: all 0.3s !important;
+	  }
+	  .main-navigation > #vida-top-menu {
+		margin-left: -15px;
+		margin-right: -15px;	  
+	  }
+		.main-navigation.toggled ul.nav-menu {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+		}
+		  .main-navigation ul > li{
+		    display: table-row;
+			width: 100%;
+		  }
+		  	.main-navigation ul > li > a{		  	
+				display: block;
+				width: 100%;
+				padding-top: 18px;
+				padding-bottom: 15px;
+				border-top: #25a2cb 1px inset;				
+				border-bottom: #074568 1px solid;				
+			}
+			  .main-navigation ul > li > a:hover{
+				background: #074568;
+			  }
+
+	}
+	
+	@media (max-width: 780px) {
+	
+		.panel-grid-cell>.container {
+			max-width: 96% !important;
+		}
+		
+	}
+		
+	@media (max-width: 767px) {
+	
+		.site-branding {
+			padding-bottom: 0;
+		}
+
+		.vida_video_wrapper {
+			max-width: 98% !important;
+			margin-left: 1%;
+		}		
+		
+		#vida-banner .banner-form .vida-form input {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		
+		#vida-banner .banner-form .vida-form {
+			padding-bottom: 20px;
+		}
+		
+		.has-banner:after {
+		    background-position: left top !important;
+		}
+		
+		.introvida_bg {
+			background-position: 70% 0 !important;
+		}
+		
+		/* Table overflow fix */
+		
+		.entry-content table ,
+		table *, table{			
+			max-width: 100%;
+			width: initial !important;
+		}
+	
+	}
+	
+	@media (max-width: 640px) {
+	
+		.panel.widget .widget-title,
+		.so-panel.widget .widget-title,
+		section .widget-title {
+		  padding: 0 10px;
+		}
+		
+	  .panel-grid .tim-ferris-wrapper.panel-row-style {
+		padding-bottom: 0;	
+	  }  
+	
+		.tim-ferris-wrapper .tim-ferris-body {
+			position: relative;
+			padding-left: 0;
+			padding-right: 0;
+			margin-top: -55px;
+			padding-top: 35px;
+			padding-bottom: 20px;
+			height: 100%;
+			z-index: 51;
+		}
+		
+			.tim-ferris-wrapper .tim-ferris-body > *{
+				position: relative;
+				z-index: 52;
+			}
+		
+		.tim-ferris-wrapper .tim-ferris-body:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			display: block;
+			width: 200%;
+			height: 100% !important;
+			background: #FFF;
+			opacity: .7;
+			float: none;
+			z-index: 34;
+			left: -10%;
+			right: -10%;
+		}
+		
+		.panel-grid-cell>.container {
+			max-width: 96% !important;
+		}
+		
+		#home-bottom-form {
+			margin-bottom: 20px;
+		}
+		
+	}
+	
+	@media (max-width: 560px) {
+	
+		/* menu & phone fix */
+		
+		.is-sticky .site-logo {
+			max-width: 160px;
+			margin-left: 2%;
+		}
+		
+		.vida-phone-no {
+			display: none !important;
+		}
+	
+		ul.page-bullet {
+			background-size: inherit;
+		}
+			ul.page-bullet > li:first-child {
+				text-align: left;
+			}
+			ul.page-bullet > li:last-child {
+				text-align: right;
+			}
+			
+		.vida-number-bg > ol li:before {
+			font-size: 4rem;
+			color: #c0d9ec;
+			margin-top: 20px;
+		}
+		.vida-number-bg > ol li {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8fbfe+0,f8fbfe+100&0.65+0,0+100 */
+			background: -moz-radial-gradient(center, ellipse cover,  rgba(248,251,254,0.65) 0%, rgba(248,251,254,0) 100%); /* FF3.6-15 */
+			background: -webkit-radial-gradient(center, ellipse cover,  rgba(248,251,254,0.65) 0%,rgba(248,251,254,0) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: radial-gradient(ellipse at center,  rgba(248,251,254,0.65) 0%,rgba(248,251,254,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e5ea', endColorstr='#00f8fbfe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		}
+			.vida-number-bg > ol li > span.number-bg-content {
+			  position: inherit;
+			  display: inline-block;
+			}
+	
+		/* related posts */
+		.crp_related li {
+			display: block;
+			margin-bottom: 10px;
+		}
+		  .crp_related .crp_title {
+			position: initial;
+		  }
+
+	
+	}
+	
+	@media (max-width: 479px) {
+	
+		ul.page-bullet,
+		ul.page-bullet.freestep,
+		ul.page-bullet.questionnaire	{
+			background-size: 100% auto;
+		}
+		
+		.panel.widget .widget-title,
+		.so-panel.widget .widget-title,
+		section .widget-title  {
+			margin-top: 15px;
+		}
+		
+		.your-perfect-girl table,
+		  .your-perfect-girl table > tbody > tr > td {
+			padding: 0 !important;
+		  }
+		
+		.alignleft,
+		.alignright,
+		.alignnone {
+			display: block;
+			float: none;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+		
+	}
+ 
+
+ 
+	/*
+	
+	@media screen and (min-width:992px) and (max-width:1200px) {
+		.tim-ferris-wrapper {
+			background: transparent url(images/tim-ferris-bg.jpg) no-repeat center top;
+		}
+	}
+	
+	*/
+
+	
+/**
+ * End of ViDA styles CSS 
+ */ 

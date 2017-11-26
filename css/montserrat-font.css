@@ -1,0 +1,60 @@
+/**
+ *
+ * path: /files/fonts/foldernameoffont
+ * @font-face reference: /files/fonts/foldernameoffont.css
+ */
+ 
+ 
+/* Montserrat */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/files/fonts/montserrat/hinted-Montserrat-SemiBold.eot');
+	src: local('Montserrat Semi Bold'), local('Montserrat-SemiBold'),
+		url('/files/fonts/montserrat/hinted-Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-SemiBold.woff2') format('woff2'),
+		url('/files/fonts/montserrat/hinted-Montserrat-SemiBold.woff') format('woff'),
+		url('/files/fonts/montserrat/hinted-Montserrat-SemiBold.ttf') format('truetype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/files/fonts/montserrat/hinted-Montserrat-Regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Regular.woff2') format('woff2'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Regular.woff') format('woff'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Regular.ttf') format('truetype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/files/fonts/montserrat/hinted-Montserrat-Light.eot');
+	src: local('Montserrat Light'), local('Montserrat-Light'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Light.woff2') format('woff2'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Light.woff') format('woff'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Light.ttf') format('truetype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Light.svg#Montserrat-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/files/fonts/montserrat/hinted-Montserrat-Bold.eot');
+	src: local('Montserrat Bold'), local('Montserrat-Bold'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Bold.woff2') format('woff2'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Bold.woff') format('woff'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Bold.ttf') format('truetype'),
+		url('/files/fonts/montserrat/hinted-Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}

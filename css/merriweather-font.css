@@ -1,0 +1,59 @@
+/**
+ *
+ * path: /files/fonts/foldernameoffont
+ * @font-face reference: /files/fonts/foldernameoffont.css
+ */
+ 
+ 
+/* Merriweather */
+@font-face {
+	font-family: 'Merriweather';
+	src: url('/files/fonts/merriweather/hinted-Merriweather-Bold.eot');
+	src: local('Merriweather Bold'), local('Merriweather-Bold'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Bold.woff2') format('woff2'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Bold.woff') format('woff'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Bold.ttf') format('truetype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Bold.svg#Merriweather-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('/files/fonts/merriweather/hinted-Merriweather-Regular.eot');
+	src: local('Merriweather Regular'), local('Merriweather-Regular'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Regular.woff2') format('woff2'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Regular.woff') format('woff'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Regular.ttf') format('truetype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('/files/fonts/merriweather/hinted-Merriweather-BoldItalic.eot');
+	src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'),
+		url('/files/fonts/merriweather/hinted-Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-BoldItalic.woff2') format('woff2'),
+		url('/files/fonts/merriweather/hinted-Merriweather-BoldItalic.woff') format('woff'),
+		url('/files/fonts/merriweather/hinted-Merriweather-BoldItalic.ttf') format('truetype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-BoldItalic.svg#Merriweather-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	src: url('/files/fonts/merriweather/hinted-Merriweather-Italic.eot');
+	src: local('Merriweather Italic'), local('Merriweather-Italic'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Italic.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Italic.woff2') format('woff2'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Italic.woff') format('woff'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Italic.ttf') format('truetype'),
+		url('/files/fonts/merriweather/hinted-Merriweather-Italic.svg#Merriweather-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}

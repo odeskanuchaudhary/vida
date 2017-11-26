@@ -1,0 +1,85 @@
+<?php
+
+class ViDA_HTML_Editor extends WP_Widget {
+
+// constructor
+    function vida_html_editor() {
+		$widget_ops = array('classname' => 'vida_html_editor_widget', 'description' => __( 'Add simple text or use the HTML editor', 'vida') );
+        parent::__construct(false, $name = __('ViDA: Text/HTML editor', 'vida'), $widget_ops);
+		$this->alt_option_name = 'vida_html_editor_widget';
+		
+		add_action( 'save_post', array($this, 'flush_widget_cache') );
+		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
+		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
+    }
+	
+	// widget form creation
+	function form($instance) {
+
+	// Check values
+		$html_textarea 		= isset( $instance['html_textarea'] ) ?  $instance['html_textarea'] : '';
+	?>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('html_textarea'); ?>"><?php _e('Enter your HTML text.', 'vida'); ?></label>		<?php 		$textarea_id = $this->get_field_id('html_textarea'); 	$textarea_id = "vida_textarea";	$textarea_name = $this->get_field_name('html_textarea');		$textarea_content = $html_textarea;			//wp_editor( $textarea_content, $textarea_id, array( 'textarea_name' => $textarea_name, 'textarea_rows' => '16', 'tinymce' => true, 'quicktags'=> false, 'media_buttons' => false ) );			?>	<textarea class="widefat" id="<?php echo $textarea_id ?>" name="<?php echo $textarea_name; ?>"><?php echo $textarea_content; ?></textarea>
+	</p>		<script type="text/javascript">				//alert('on-dialog');				function tme_convertExcerpt() {						jQuery("#vida_textarea").addClass("mceEditor"); 															if ( typeof( tinyMCE ) == "object" && typeof( tinyMCE.execCommand ) == "function" ) {												//alert('start mce');																																								if ( ! jQuery("#vida_textarea").length )					jQuery("#vida_textarea").wrap( "<div id='vida_textareaeditorcontainer'></div>" ); 								tinyMCE.execCommand("mceAddControl", false, "vida_textarea");				//alert('end mce');							} else {																//alert('no-function');			}														}				tme_convertExcerpt();			</script>
+	<?php
+	}
+
+	// update widget
+	function update($new_instance, $old_instance) {
+		$instance = $old_instance;
+		$instance['html_textarea'] 	 = $new_instance['html_textarea'];		
+		$this->flush_widget_cache();
+
+		$alloptions = wp_cache_get( 'alloptions', 'options' );
+		if ( isset($alloptions['vida_html_editor']) )
+			delete_option('vida_html_editor');		  
+		  
+		return $instance;
+	}
+	
+	function flush_widget_cache() {
+		wp_cache_delete('vida_html_editor', 'widget');
+	}
+	
+	// display widget
+	function widget($args, $instance) {
+		$cache = array();
+		if ( ! $this->is_preview() ) {
+			$cache = wp_cache_get( 'vida_html_editor', 'widget' );
+		}
+
+		if ( ! is_array( $cache ) ) {
+			$cache = array();
+		}
+
+		if ( ! isset( $args['widget_id'] ) ) {
+			$args['widget_id'] = $this->id;
+		}
+
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		ob_start();
+		extract($args);
+
+		$html_textarea 	 = isset( $instance['html_textarea'] ) ? $instance['html_textarea'] : '';	
+
+?>
+		<?php if ($html_textarea !='') : ?>					<?php echo $before_widget ?>				  <div class="textwidget">
+					<?php echo $html_textarea; ?>									  </div>				  			<?php echo $after_widget ?>
+		<?php endif; ?>	
+	<?php
+
+		if ( ! $this->is_preview() ) {
+			$cache[ $args['widget_id'] ] = ob_get_flush();
+			wp_cache_set( 'vida_html_editor', $cache, 'widget' );
+		} else {
+			ob_end_flush();
+		}
+	}
+	
+}

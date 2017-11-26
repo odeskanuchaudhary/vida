@@ -1,0 +1,93 @@
+/*
+ * Style for ViDA widgets (Page Builder, etc...)
+--------------------------------------------------------------*/
+
+/**
+ * ViDA Press Page
+ */
+ 
+.news_media_row {
+	font: normal 18px 'Baskerville', Times, serif;
+	height: auto;
+	margin: 5px auto 5px auto;
+	text-align: center;
+	width: 100%;
+}
+
+	/* Image Box Style */
+	.news_media_row .box {
+		border: 5px solid #fff;
+		cursor: pointer;
+		/* height: 180px; */
+		float: none;
+		margin: 5px 15px;
+		position: relative;
+		overflow: hidden;
+		max-width: 100%;
+			-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+			-moz-box-shadow: 1px 1px 1px 1px #ccc;
+			box-shadow: 1px 1px 1px 1px #ccc;
+	}
+		.news_media_row .box img {
+			width: auto;
+			min-width: 100%;
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;	
+			transition: all 300ms ease-out;
+		}
+
+	/* Caption Common Style */
+	.news_media_row .box .caption {
+		background-color: rgba(0,0,0,0.8);
+		position: absolute;
+		color: #fff;
+		z-index: 100;
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;	
+			transition: all 300ms ease-out;
+		left: 0;
+		right:0;
+		bottom:0;
+		top:0;
+	}
+
+	/** Caption 2: Full Width & Height **/
+	.news_media_row .box .full-caption {
+		width: 100%;
+		/* height: 180px;	
+		top: -190px;*/
+		top: -100%;
+		height: 100%;
+		padding: 15px;
+	}
+
+	/** Full Caption :hover Behaviour **/
+	.news_media_row .box:hover .full-caption {
+		-moz-transform: translateY(100%);
+		-o-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		opacity: 1;
+		transform: translateY(100%);
+	}
+	
+		.news_media_row .box:hover .full-caption > a{
+			/*padding-top:30px;
+			display: inline-grid;*/
+			
+			display:block;
+			height: 100%;
+			position: relative;
+			vertical-align: middle;
+		}
+		
+		.img-hover-more-link {
+			clear:both;
+			display:block;
+			font-size: 11pt;
+			padding:10px;
+		}
+

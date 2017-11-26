@@ -1,0 +1,104 @@
+/*
+ * Style for form validations
+--------------------------------------------------------------*/
+[disabled],
+[locked] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.error-required,
+.vida-input-error {
+    border: 1px solid #CD0A0A;
+    box-shadow: 0px 0px 4px 0px #bc1010;
+    color: #CD0A0A;
+	background: #fefefc url(../img/error-24.png) 98% center no-repeat;
+}
+
+
+/* when a user has an account linked in chrome, and they auto fill the form remove the ua styling */
+input:-webkit-autofill{
+	background-color: inherit !important;
+	background-image: inherit !important;
+	color: inherit !important;
+}
+
+input:required:focus,
+input.error-required:focus,
+input.vida-input-error:focus {
+	background-image: none !important;
+	background-color: #FFFFFF;
+}
+	
+.form-processing input:required:focus,
+.form-processing input.error-required:focus,
+.form-processing input.vida-input-error:focus,
+input:required:focus,
+input.error-required:focus,
+input.vida-input-error:focus
+{
+	border: #CCC 1px solid;
+}
+
+.form-processing,
+.vida-form  form.form-processing{
+	position: relative;
+	pointer-events: none;
+}
+
+	
+	/* adds processing/loading style to input 
+	.form-processing input[type="email"],
+	.vida-form  form.form-processing .input-processing {
+		background: #eee url(../img/ajaxloader.gif) 97% center no-repeat;
+		background-size: 24px 24px;
+	}*/	
+	
+	.form-processing input,
+	.vida-form  form.form-processing input,
+	.form-processing button,
+	.vida-form  form.form-processing button {
+		opacity: .8;
+	}
+	
+		/*
+		.form-processing.success .input-processing,
+		.vida-form  form.form-processing.success .input-processing{
+			background: #fefefc url(../img/success-check-icon.png) 98% center no-repeat;
+			background-size: 24px 24px;
+			opacity: 1;
+			border: #00732e 1px solid;
+		}
+		*/
+		
+		.form-processing.success input,
+		.vida-form  form.form-processing.success input,
+		.form-processing.success button,
+		.vida-form  form.form-processing.success button {
+			opacity: 1;
+		}
+	
+	.form-processing .submit-input-wrapper {
+		position: relative;
+		display:block;
+	}
+	
+		 .form-processing .submit-input-wrapper:after {
+			display: block;
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			background: transparent url(../../images/ajax-loader-large.gif) center center no-repeat;
+			background-size: 32px 32px;
+		}
+		
+			.form-processing.success  .submit-input-wrapper:after{
+				background: transparent url(../img/success-check-icon.png)  center no-repeat;
+				background-size: 24px 24px;
+			}
+

@@ -1,0 +1,31 @@
+/**
+ *
+ * path: /files/fonts/foldernameoffont
+ * @font-face reference: /files/fonts/foldernameoffont.css
+ */
+ 
+ 
+/* RoadRadio */
+@font-face {
+	font-family: 'RoadRadio';
+	src: url('/files/fonts/roadradio/hinted-RoadRadio.eot');
+	src: url('/files/fonts/roadradio/hinted-RoadRadio.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/roadradio/hinted-RoadRadio.woff2') format('woff2'),
+		url('/files/fonts/roadradio/hinted-RoadRadio.woff') format('woff'),
+		url('/files/fonts/roadradio/hinted-RoadRadio.ttf') format('truetype'),
+		url('/files/fonts/roadradio/hinted-RoadRadio.svg#RoadRadio') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RoadRadio';
+	src: url('/files/fonts/roadradio/hinted-RoadRadio-Black.eot');
+	src: url('/files/fonts/roadradio/hinted-RoadRadio-Black.eot?#iefix') format('embedded-opentype'),
+		url('/files/fonts/roadradio/hinted-RoadRadio-Black.woff2') format('woff2'),
+		url('/files/fonts/roadradio/hinted-RoadRadio-Black.woff') format('woff'),
+		url('/files/fonts/roadradio/hinted-RoadRadio-Black.ttf') format('truetype'),
+		url('/files/fonts/roadradio/hinted-RoadRadio-Black.svg#RoadRadio-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}

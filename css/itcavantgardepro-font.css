@@ -1,0 +1,47 @@
+/**
+ *
+ * path: /files/fonts/foldernameoffont
+ * @font-face reference: /files/fonts/foldernameoffont.css
+ */
+ 
+ 
+/* ITC Avant Garde Pro */
+@font-face {
+	font-family: 'ITCAvantGardePro-Md'; /* changed from 'ITC Avant Garde Pro Md' */
+	/*src: url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Md.eot');*/
+	src: local('ITC Avant Garde Pro Md'), local('ITCAvantGardePro-Md'),
+		/*url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Md.eot?#iefix') format('embedded-opentype'),*/
+		url('/files/fonts/ITCAvantGardePro-Md.otf') format('opentype'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Md.woff2') format('woff2'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Md.woff') format('woff'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Md.ttf') format('truetype'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Md.svg#ITCAvantGardePro-Md') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITCAvantGardePro-Bold'; /* changed from  'ITC Avant Garde Pro Md' */
+	/*src: url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Bold.eot');*/
+	src: local('ITC Avant Garde Pro Bold'), local('ITCAvantGardePro-Bold'),
+		/* url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Bold.eot?#iefix') format('embedded-opentype'),*/
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Bold.woff2') format('woff2'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Bold.woff') format('woff'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Bold.ttf') format('truetype'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-Bold.svg#ITCAvantGardePro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITCAvantGardePro-MdObl'; /* changed from 'ITC Avant Garde Pro Md' */
+	/*src: url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-MdObl.eot');*/
+	src: local('ITC Avant Garde Pro MdObl'), local('ITCAvantGardePro-MdObl'),
+		/* url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-MdObl.eot?#iefix') format('embedded-opentype'),*/
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-MdObl.woff2') format('woff2'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-MdObl.woff') format('woff'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-MdObl.ttf') format('truetype'),
+		url('/files/fonts/itcavantgardepro/hinted-ITCAvantGardePro-MdObl.svg#ITCAvantGardePro-MdObl') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}

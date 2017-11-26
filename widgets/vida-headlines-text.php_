@@ -1,0 +1,87 @@
+<?php
+class ViDA_Headlines_Text extends WP_Widget {
+
+// constructor
+    function vida_headlines_text() {
+		$widget_ops = array('classname' => 'vida_headlines_text_widget', 'description' => __( 'Headline text using H1 and/or H2', 'vida') );
+        parent::__construct(false, $name = __('ViDA: Heading Titles', 'vida'), $widget_ops);
+		$this->alt_option_name = 'vida_headlines_text_widget';
+		
+		add_action( 'save_post', array($this, 'flush_widget_cache') );
+		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
+		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
+    }
+	
+	// widget form creation
+	function form($instance) {
+
+	// Check values
+		$headline1     			= isset( $instance['headline1'] ) ? esc_attr( $instance['headline1'] ) : '';				$heading2     			= isset( $instance['heading2'] ) ? esc_attr( $instance['heading2'] ) : '';
+	?>
+
+	<p>
+	<label for="<?php echo $this->get_field_id('headline1'); ?>"><?php _e('Heading 1 - H1', 'vida'); ?></label>
+	<input class="widefat" id="<?php echo $this->get_field_id('headline1'); ?>" name="<?php echo $this->get_field_name('headline1'); ?>" type="text" value="<?php echo $headline1; ?>" />
+	</p>
+	<p>	<label for="<?php echo $this->get_field_id('heading2'); ?>"><?php _e('Headling 2 - H2', 'vida'); ?></label>	<input class="widefat" id="<?php echo $this->get_field_id('heading2'); ?>" name="<?php echo $this->get_field_name('heading2'); ?>" type="text" value="<?php echo $heading2; ?>" />	</p>
+	<?php
+	}
+
+	// update widget
+	function update($new_instance, $old_instance) {
+		$instance = $old_instance;
+		$instance['headline1'] 			 = strip_tags($new_instance['headline1']);				$instance['heading2'] 			 = strip_tags($new_instance['heading2']);
+		$this->flush_widget_cache();
+
+		$alloptions = wp_cache_get( 'alloptions', 'options' );
+		if ( isset($alloptions['vida_headlines_text']) )
+			delete_option('vida_headlines_text');		  
+		  
+		return $instance;
+	}
+	
+	function flush_widget_cache() {
+		wp_cache_delete('vida_headlines_text', 'widget');
+	}
+	
+	// display widget
+	function widget($args, $instance) {
+		$cache = array();
+		if ( ! $this->is_preview() ) {
+			$cache = wp_cache_get( 'vida_headlines_text', 'widget' );
+		}
+
+		if ( ! is_array( $cache ) ) {
+			$cache = array();
+		}
+
+		if ( ! isset( $args['widget_id'] ) ) {
+			$args['widget_id'] = $this->id;
+		}
+
+		if ( isset( $cache[ $args['widget_id'] ] ) ) {
+			echo $cache[ $args['widget_id'] ];
+			return;
+		}
+
+		ob_start();
+		extract($args);
+
+		$headline1 			 = ( ! empty( $instance['headline1'] ) ) ? $instance['headline1'] : '';
+		$headline1 			 = apply_filters( 'widget_title', $headline1, $instance, $this->id_base );				$heading2 			 = ( ! empty( $instance['heading2'] ) ) ? $instance['heading2'] : '';
+
+?>
+		<?php echo $before_widget ?>
+				<?php if ( $headline1 ) echo '<h1 class="widget-title headline1">' . $headline1 . '</h1>'; ?>								<?php if ( $heading2 ) echo '<h2 class="widget-title headline2">' . $heading2 . '</h2>'; ?>
+		<?php echo $after_widget ?>		
+	<?php
+
+		if ( ! $this->is_preview() ) {
+			$cache[ $args['widget_id'] ] = ob_get_flush();
+			wp_cache_set( 'vida_headlines_text', $cache, 'widget' );
+		} else {
+			ob_end_flush();
+		}
+	}
+	
+}

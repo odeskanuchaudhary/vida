@@ -1,0 +1,340 @@
+#page {
+  /* display: inherit; */
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro 2';
+  src: url('//static.virtualdatingassistants.com/files/fonts/ACaslonPro-Semibold.otf') format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  src: url('//static.virtualdatingassistants.com/files/fonts/ACaslonPro-Semibold.otf') format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro 2';
+  src: url('//static.virtualdatingassistants.com/files/fonts/ACaslonPro-SemiboldItalic.otf') format("opentype");
+  font-weight: normlal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro 2';
+  src: url('//static.virtualdatingassistants.com/files/fonts/ACaslonPro-Bold.otf') format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro 2';
+  src: url('//static.virtualdatingassistants.com/files/fonts/ACaslonPro-BoldItalic_0.otf') format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Montserrat-Light.otf') format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Montserrat-Regular.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Montserrat-SemiBold.otf') format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Montserrat-Bold.otf') format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RoadRadio';
+  src: url('//static.virtualdatingassistants.com/files/fonts/RoadRadio.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Raleway-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('//static.virtualdatingassistants.com/files/fonts/Raleway-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+html {
+  overflow: hidden;
+  /* Disables panning */
+  overflow-y: visible !important;
+  -ms-content-zooming: none;
+  /* Disables zooming */
+  touch-action: none;
+  /* Disable any special actions on tap/touch */
+}
+
+body {
+  font-family: Times New Roman, serif;
+  color: #2f2f2f;
+  /* font-size: 16px; <-default for browsers... We set html font-size to 62.5%=10px to get 100%=16px=1em	
+	background-color: #074568; */
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: #fff;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Adobe Caslon Pro', Times, serif;
+  color: #2f2f2f;
+  margin-top: 10px;
+}
+
+input {
+  padding: 5px 10px;
+  outline: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto;
+  font-size: 1em;
+  border: #CCC 1px solid;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif !important;
+}
+
+.vida-hidden,
+.best-email {
+  display: none !important;
+}
+
+.has-banner:after {
+  position: absolute;
+  background-image: url(https://static.virtualdatingassistants.com/wp-content/themes/moesia-vida/images/vida_background_640w.jpg);
+}
+
+#vida-banner {
+  background: rgba(255,255,255,.8);
+}
+
+#vida-banner .banner-form .vida-form input[type="email"] {
+  max-width: 360px;
+}
+
+#header-media-logos {
+  clear: both;
+  background: #407d9d url(images/vida-medialogos-bg.png) repeat-x bottom center;
+  height: auto;
+  text-align: center;
+  border-bottom: #3f7f9b 1px solid;
+}
+
+#header-media-logos > img {
+  height: auto;
+}
+
+.vida-form h3 {
+  font-family: 'Adobe Caslon Pro 2', 'Adobe Caslon Pro', Times, serif;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.1;
+  display: block;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.vida-form  input {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-width: 246px;
+  max-width: 320px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.vida-button {
+  text-decoration: none !important;
+  font-size: 18px;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #e72a37;
+  background: rgb(231,42,55);
+  background: rgba(231,42,55,1);
+  margin: 10px auto;
+  padding: 8px 14px;
+  color: #FFFFFF !important;
+  font-weight: 400;
+  font-family: FontAwesome, 'Montserrat', 'RoadRadio', sans-serif !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  outline: none !important;
+  line-height: 1.5;
+  min-width: 160px;
+  border: none;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  body {
+    /*font-size: 16px;
+		line-height: 1.4;*/
+  }
+
+  .vida-button {
+    min-width: 220px;
+  }
+
+  .vida-button {
+    font-size: 18px;
+  }
+
+  .vida-form  input {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .vida-form h3 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 768px) {
+  #vida-banner {
+    background: none;
+    background: transparent;
+  }
+
+  .vida-form  input {
+    padding: 10px 12px 9px;
+    font-size: 16px;
+    min-width: 275px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .vida-form h3 {
+    font-size: 32px;
+  }
+
+  .vida-button {
+    padding: 9px 16px;
+    font-weight: 400;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container.vida-wide {
+    width: 100%;
+    max-width: 1366px;
+  }
+
+  #vida-banner {
+    padding: 10px 20px;
+  }
+
+  #vida-banner .banner-form .vida-form h3 {
+    font-size: 18px;
+  }
+
+  .vida-form  input {
+    padding: 10px 15px;
+    font-size: 17px;
+  }
+
+  .vida-button {
+    font-size: 20px;
+    padding: 9px 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .has-banner:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .container.vida-wide {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #vida-banner .banner-form .vida-form input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #vida-banner .banner-form .vida-form {
+    padding-bottom: 20px;
+  }
+
+  .has-banner:after {
+    background-position: left top !important;
+  }
+}

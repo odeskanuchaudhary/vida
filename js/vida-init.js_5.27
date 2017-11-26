@@ -1,0 +1,143 @@
+/**
+ * Initialize Scripts for ViDA
+ * Loads in header @dependent on jQuery
+ */
+
+ 
+	/* Check/Load jquery */		
+	
+	function CheckLoadjQuery() {
+	
+		if (typeof(jQuery) === 'undefined') {
+		
+			console.log('jQuery undefined...injecting now!');
+			
+			jQuery.getScript('/wp-includes/js/jquery/jquery.js');
+			
+			//document.write("<script type=\"text/javascript\" src=\"/wp-includes/js/jquery/jquery.js\"></" + "script>");
+			
+		}
+		
+	}
+	
+	/* Setup cache of scripts */
+	
+	function SetupCacheScript() {
+	
+		jQuery.ajaxSetup({
+		
+		  cache: true
+		  
+		});
+		
+	}
+
+	
+	/* Check if jQuery has loaded, if not defer method until it has */
+	
+	function DeferAction(method) {
+	
+		if (window.jQuery) {
+			method();
+		}			
+		else {
+			setTimeout(function() { DeferAction(method) }, 50);
+		}	
+	}
+	
+	
+	/* Custom Async script loader */
+	
+	function loadScript(url, callback){
+
+		var script = document.createElement("script")
+		script.type = "text/javascript";
+
+		if (script.readyState){  //IE
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" ||
+						script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		} else {  //Others
+			script.onload = function(){
+				callback();
+			};
+		}
+
+		script.src = url;
+		document.getElementsByTagName("head")[0].appendChild(script);
+	}
+
+	
+	/* Lazy load script */
+	
+	function vida_lazy_images_init() {
+	
+		jQuery('.lazy').show().lazy({
+			effect: "fadeIn",
+			threshold: 150,
+			//appendScroll: $('.vida-lazy-wrap'),
+			combined: true,
+			delay: 15000,
+			enableThrottle: true,
+			throttle: 250,
+			beforeLoad: function(element) {
+				var imageSrc = element.data('src');
+				console.log('image "' + imageSrc + '" is about to be loaded');
+			},
+			afterLoad: function(element) {
+				// called after an element was successfully handled
+				element.addClass('handled');
+				var imageSrc = element.data('src');
+				console.log('image "' + imageSrc + '" was loaded successfully');
+			},
+		});
+	
+	}
+	
+	/* Start rendering scripts */
+
+	
+	
+	try {
+	
+		SetupCacheScript();
+	
+	}
+	
+	catch(e) {	
+		
+		console.log('Error occured...!');
+		
+		if (typeof(jQuery) === 'undefined') {
+		
+			console.log('Loading fallback jQuery...');
+			
+			//load our jQuery
+			
+			
+			
+		}
+		
+	}
+	
+	finally {	
+	
+		console.log('finally now!');
+		
+		DeferAction(SetupCacheScript);
+		
+		//jQuery.noConflict();
+		
+		jQuery(".welcome-info").hide();
+	
+		loadScript( "//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.6.7/jquery.lazy.min.js", vida_lazy_images_init );
+		
+		
+		
+	}
+	
+

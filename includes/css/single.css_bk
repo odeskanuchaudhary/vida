@@ -1,0 +1,205 @@
+/*
+ * Style for single posts and related
+--------------------------------------------------------------*/
+
+
+
+
+/* ViDA Bio Box under posts */
+
+.vida-bio-box  {
+    background-color: #FFF;
+    border: 1px solid #074568;	
+	padding: 15px 5px;
+	clear: both;
+    margin: 20px 0;
+	
+	border: 1px solid #cccccc !important;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/**
+ * ViDA - Related Posts - CSS Class 
+ * CRP
+ * ViDA Popular
+**/
+.vida-related-posts {
+	list-style: none;
+	margin-left: 0;
+    padding-left: 0;
+}
+  .vida-related-posts > li {
+	position: relative;
+	text-decoration: none;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+	height: 100%;
+  }
+	.vida-related-posts > li > .rel-wrap {
+		display: table;
+		
+		border: #aaaaaa 1px solid;
+		position: relative;
+		table-layout: fixed;
+		vertical-align:top;
+		text-align: center;
+		-webkit-transition: all 0.4s;
+			transition: all 0.4s;
+		height: 100%;
+		width: 100%;
+	}
+		.vida-related-posts > li > .rel-wrap  > a {			
+			display: table-cell;
+			float: none;
+			height: 100%;
+			opacity: .7;
+			position: relative;
+			text-decoration: none !important;
+			width: 100%;
+		}
+		
+		  .vida-related-posts  > li > .rel-wrap  > a:hover {
+				opacity: 1;
+				border-color: #25a2cb;
+			}
+			
+	.vida-related-posts .rel-title,
+	  .vida-related-posts .crp_title {
+		background: rgb(41, 41, 41);
+		background: rgba(41, 41, 41, 0.9); 
+		display: block;
+		position: relative;
+		height: auto;
+		padding: 10px;
+		color: #fff;
+		font-size: .8em;
+		width: 100%;
+	  }
+		  .vida-related-posts li:hover .rel-title,
+		  .vida-related-posts li:hover .crp_title {
+			background: rgb(26, 67, 98);
+			background: rgba(26, 67, 98, 0.9);
+			color: #FFFFFF !important;
+			text-shadow: #25a2cb 0em 0em .2em;
+		  }
+
+		  .vida-related-posts  .rel-thumb,
+		  .vida-related-posts  .crp_thumb{
+			padding: 10px;
+		  }
+		  
+/* Media */
+
+@media (min-width: 768px) {
+
+	.vida-bio-box  {
+		padding: 20px 10px;
+	}
+	
+	.entry-content table {
+		display: block;
+		max-width: 100% !important;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+	.single .hentry, .page .hentry {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+	.hentry .entry-content img.alignnone {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	.hentry .entry-content img.size-vida-blog-onehalf {
+		width: 48.1%;
+	}
+	
+	.hentry .entry-content img.size-vida-blog-onethird {
+		width: 31.33%;
+	}
+	
+	.hentry .entry-content img.size-vida-blog-twothird {
+		width: 65%;
+	}
+	
+}
+
+
+@media (min-width: 992px) {
+
+	.vida-bio-box  {
+		padding: 20px 15px;
+	}
+		
+	  .single article .entry-header {
+		margin-left: 25px;
+	  }
+
+}
+
+@media (min-width: 1200px) {
+
+
+	.vida-bio-box  {
+		padding: 25px 20px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+    .hentry .entry-content img {
+		max-width: 96%;
+	}
+	
+		/* Table overflow fix */
+		
+		.entry-content table {			
+			max-width: 100%;
+			width: inherit !important;
+		}
+		
+}
+
+@media (max-width: 560px) {
+
+		.entry-content table ,
+		.entry-content table>tbody,
+		.entry-content table>tbody>tr,
+		.entry-content table>thead,
+		.entry-content table>thead>tr,
+		.entry-content table>thead>tr>th,
+		.entry-content table>tfoot,
+		.entry-content table>tfoot>tr,
+		.single .entry-content table>thead>tr>th, .single .entry-content table>tbody>tr>th, 
+		.single .entry-content table>tfoot>tr>th, .single .entry-content table>thead>tr>td, 
+		.single .entry-content table>tbody>tr>td, .single .entry-content table>tfoot>tr>td  {
+			display: block;
+			width: 100% !important;
+			clear: both;
+		}
+		
+}
+
+@media (max-width: 479px) {
+
+    .hentry .entry-content img {
+		max-width: 96%;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+		
+	
+}
